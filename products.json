@@ -1,0 +1,58 @@
+[
+  {
+  "id": 1,
+  "name": "produkt 1",
+  "brand": "brand 1",
+  "color": "color 1",
+  "size": "size 1",
+  "weigth": 1.9,
+  "description": "desc 1",
+  "category": "category 1",
+  "prices": [
+    { 
+      "validFrom": "01.01.1997",
+      "validTo": "31.12.1997",
+      "price": 420.69
+     },
+    {
+      "validFrom": "01.01.1998",
+      "validTo": "31.12.1998",
+      "price": 69.42
+    }
+  ],
+  "discounted": false,
+  "discountAmount": 19,
+  "stock": 999,
+  "packagingSize": "pSize 1",
+  "packagingWeigth": "pWeigth 1",
+  "discontinued": true
+},
+{
+  "id": 2,
+  "name": "produkt 2",
+  "brand": "brand 2",
+  "color": "color 2",
+  "size": "size 2",
+  "weigth": 3.5,
+  "description": "desc 2",
+  "category": "category 2",
+  "prices": [
+    { 
+      "validFrom": "01.01.1998",
+      "validTo": "31.12.1998",
+      "price": 78.89
+     },
+    {
+      "validFrom": "01.01.1999",
+      "validTo": "31.12.1999",
+      "price": 69.96
+    }
+  ],
+  "discounted": true,
+  "discountAmount": 19,
+  "stock": 420,
+  "packagingSize": "pSize 2",
+  "packagingWeigth": "pWeigth 2",
+  "discontinued": false
+  }
+]
