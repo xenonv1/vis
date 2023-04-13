@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "service 1",
+    "description": "The awesome service 1",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": "31.12.2022",
+        "price": 59.99
+      },
+      {
+        "validFrom": "01.01.2023",
+        "validTo": null,
+        "price": 69.99
+      }
+    ],
+    "availability": true,
+    "category": "insurance",
+    "contractPeriodInDays": 365,
+    "discount": false,
+    "discountAmount": null
+  },
+  {
+    "id": 2,
+    "name": "service 2",
+    "description": "The awesome service 2",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": "31.12.2022",
+        "price": 4.99
+      },
+      {
+        "validFrom": "01.01.2023",
+        "validTo": null,
+        "price": 5.99
+      }
+    ],
+    "availability": true,
+    "category": "delivery",
+    "contractPeriodInDays": null,
+    "discount": true,
+    "discountAmountInPercent": 0.3
+  }
+]
