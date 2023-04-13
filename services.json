@@ -1,46 +1,153 @@
 [
   {
     "id": 1,
-    "name": "service 1",
-    "description": "The awesome service 1",
+    "name": "Lieferung",
+    "description": "Lieferung von Haushaltsgeräten bis zum Bestimmungsort.",
     "prices": [
       {
         "validFrom": "01.01.2000",
         "validTo": "31.12.2022",
-        "price": 59.99
+        "price": 49.99
       },
       {
         "validFrom": "01.01.2023",
         "validTo": null,
-        "price": 69.99
+        "price": 59.99
       }
     ],
     "availability": true,
-    "category": "insurance",
-    "contractPeriodInDays": 365,
+    "category": "liferung",
+    "contractPeriodInDays": null,
     "discount": false,
     "discountAmount": null
   },
   {
     "id": 2,
-    "name": "service 2",
-    "description": "The awesome service 2",
+    "name": "Montage",
+    "description": "Montage / Installation eines Haushaltsgeräts.",
     "prices": [
       {
         "validFrom": "01.01.2000",
         "validTo": "31.12.2022",
-        "price": 4.99
+        "price": 29.99
       },
       {
         "validFrom": "01.01.2023",
         "validTo": null,
-        "price": 5.99
+        "price": 34.99
       }
     ],
     "availability": true,
-    "category": "delivery",
+    "category": "montage",
     "contractPeriodInDays": null,
+    "discount": false,
+    "discountAmountInPercent": null
+  },
+  {
+    "id": 3,
+    "name": "Lieferung & Montage",
+    "description": "Lieferung von Haushaltsgeräten bis zum Bestimmungsort des Geräts inkl. Montage / Installation.",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": "31.12.2022",
+        "price": 79.99
+      },
+      {
+        "validFrom": "01.01.2023",
+        "validTo": null,
+        "price": 99.99
+      }
+    ],
+    "availability": true,
+    "category": "lieferung",
+    "contractPeriodInDays": null,
+    "discount": false,
+    "discountAmountInPercent": null
+  },
+  {
+    "id": 4,
+    "name": "Versicherung 500",
+    "description": "Versicherung von Geräten mit einem Kaufpreis ab 500€.",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": null,
+        "price": 150
+      }
+    ],
+    "availability": true,
+    "category": "versicherung",
+    "contractPeriodInDays": 730,
+    "discount": false,
+    "discountAmountInPercent": null
+  },
+  {
+    "id": 5,
+    "name": "Versicherung 1000",
+    "description": "Versicherung von Geräten mit einem Kaufpreis ab 1000€.",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": null,
+        "price": 300
+      }
+    ],
+    "availability": true,
+    "category": "versicherung",
+    "contractPeriodInDays": 730,
+    "discount": false,
+    "discountAmountInPercent": null
+  },
+  {
+    "id": 6,
+    "name": "Wartung J1",
+    "description": "Wartungungsvertrag",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": null,
+        "price": 120
+      }
+    ],
+    "availability": true,
+    "category": "wartung",
+    "contractPeriodInDays": 365,
+    "discount": false,
+    "discountAmountInPercent": null
+  },
+  {
+    "id": 7,
+    "name": "Wartung J2",
+    "description": "Wartungsvertrag",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": null,
+        "price": 200
+      }
+    ],
+    "availability": true,
+    "category": "versicherung",
+    "contractPeriodInDays": 730,
+    "discount": false,
+    "discountAmountInPercent": null
+  },
+  {
+    "id": 8,
+    "name": "Wartung J1D",
+    "description": "Vergünstigter Wartungsvertrag",
+    "prices": [
+      {
+        "validFrom": "01.01.2000",
+        "validTo": null,
+        "price": 120
+      }
+    ],
+    "availability": true,
+    "category": "versicherung",
+    "contractPeriodInDays": 365,
     "discount": true,
-    "discountAmountInPercent": 0.3
+    "discountAmountInPercent": 0.1
   }
 ]
