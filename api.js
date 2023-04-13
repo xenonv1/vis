@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 
 const app = express();
 
@@ -8,7 +8,7 @@ const port = 8000;
 /* - - - server - - - */
 
 app.listen(ipAddr, port, () => {
-    console.log(`Now listening on ${ipAddr}:${port}...`);
+  console.log(`Now listening on ${ipAddr}:${port}...`);
 });
 
 /* - - - endpoints - - - */
