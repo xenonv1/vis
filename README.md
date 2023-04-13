@@ -4,5 +4,12 @@ Repository für die REST-Schnittstelle im Rahmen der Veranstaltung "Verteilte un
 
 ## Endpoints:
 
-**.../services** - receive all available services
-**.../service/{id}** - receive a specific service by id
+### Products:
+
+**GET .../products** - receive all available products
+**GET .../product/:id** - receive information about a specific product by id
+
+### Services:
+
+**GET .../services** - receive all available services
+**GET .../service/:id** - receive information about a specific service by id
