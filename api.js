@@ -7,8 +7,12 @@ const port = 8000;
 
 /* - - - server - - - */
 
-app.listen(ipAddr, port, () => {
+app.listen(port,ipAddr, () => {
     console.log(`Now listening on ${ipAddr}:${port}...`);
 });
 
 /* - - - endpoints - - - */
+
+app.get('/products', (req, res) => {
+    res.json(products);
+  });
