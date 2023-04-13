@@ -1,58 +1,5602 @@
 [
-  {
-  "id": 1,
-  "name": "produkt 1",
-  "brand": "brand 1",
-  "color": "color 1",
-  "size": "size 1",
-  "weigth": 1.9,
-  "description": "desc 1",
-  "category": "category 1",
-  "prices": [
-    { 
-      "validFrom": "01.01.1997",
-      "validTo": "31.12.1997",
-      "price": 420.69
-     },
     {
-      "validFrom": "01.01.1998",
-      "validTo": "31.12.1998",
-      "price": 69.42
-    }
-  ],
-  "discounted": false,
-  "discountAmount": 19,
-  "stock": 999,
-  "packagingSize": "pSize 1",
-  "packagingWeigth": "pWeigth 1",
-  "discontinued": true
-},
-{
-  "id": 2,
-  "name": "produkt 2",
-  "brand": "brand 2",
-  "color": "color 2",
-  "size": "size 2",
-  "weigth": 3.5,
-  "description": "desc 2",
-  "category": "category 2",
-  "prices": [
-    { 
-      "validFrom": "01.01.1998",
-      "validTo": "31.12.1998",
-      "price": 78.89
-     },
+        "id": 1,
+        "name": "Mikrowelle 1",
+        "brand": "Siemens",
+        "color": "Weiß",
+        "size": "Größe 10",
+        "weight": 42.54,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1019.55
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 785.41
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 514,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
     {
-      "validFrom": "01.01.1999",
-      "validTo": "31.12.1999",
-      "price": 69.96
+        "id": 2,
+        "name": "Kühlschrank 2",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 33.29,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1015.73
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 177.29
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 177,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 3,
+        "name": "Geschirrspüler 3",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 8",
+        "weight": 13.33,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 223.29
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 203.29
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 821,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 4,
+        "name": "Ofen 4",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 47.79,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 598.14
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 633.72
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 776,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 5,
+        "name": "Geschirrspüler 5",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 8",
+        "weight": 2.41,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1471.48
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 850.82
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 351,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 6,
+        "name": "Geschirrspüler 6",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 6.6,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 615.04
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 731.02
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 924,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 7,
+        "name": "Mikrowelle 7",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 1",
+        "weight": 49.21,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1061.43
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 259.82
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 66,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 8,
+        "name": "Trockner 8",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 3",
+        "weight": 10.46,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1018.53
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 314.0
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 913,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 9,
+        "name": "Mikrowelle 9",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 3",
+        "weight": 34.97,
+        "description": "Viel Platz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1346.33
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 536.84
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 83,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 10,
+        "name": "Kühlschrank 10",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 6",
+        "weight": 11.13,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 329.3
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 929.79
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 925,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 11,
+        "name": "Kühlschrank 11",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 1",
+        "weight": 5.17,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 456.08
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 613.0
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 568,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 12,
+        "name": "Kühlschrank 12",
+        "brand": "LG",
+        "color": "Schwarz",
+        "size": "Größe 5",
+        "weight": 42.57,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1343.43
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 313.76
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 220,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 13,
+        "name": "Waschmaschine 13",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 3",
+        "weight": 35.22,
+        "description": "Einfache Bedienung",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1183.97
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 125.22
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 235,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 14,
+        "name": "Waschmaschine 14",
+        "brand": "Samsung",
+        "color": "Blau",
+        "size": "Größe 10",
+        "weight": 32.3,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1194.95
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 304.12
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 138,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 15,
+        "name": "Ofen 15",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 6",
+        "weight": 24.86,
+        "description": "Geräuscharm",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 251.02
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 941.31
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 305,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 16,
+        "name": "Mikrowelle 16",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 10",
+        "weight": 38.61,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1308.14
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 826.76
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 168,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 17,
+        "name": "Geschirrspüler 17",
+        "brand": "AEG",
+        "color": "Silber",
+        "size": "Größe 9",
+        "weight": 17.46,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1188.3
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 121.38
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 849,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": true
+    },
+    {
+        "id": 18,
+        "name": "Trockner 18",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 8",
+        "weight": 25.44,
+        "description": "Hohe Energieeffizienz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1129.6
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 682.81
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 776,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 19,
+        "name": "Geschirrspüler 19",
+        "brand": "Samsung",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 17.26,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 762.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 321.29
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 253,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 20,
+        "name": "Trockner 20",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 45.59,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1236.91
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 707.16
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 425,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": false
+    },
+    {
+        "id": 21,
+        "name": "Waschmaschine 21",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 8",
+        "weight": 2.96,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 220.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 891.34
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 621,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 22,
+        "name": "Geschirrspüler 22",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 1",
+        "weight": 6.91,
+        "description": "Einfache Bedienung",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1025.37
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 311.73
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 911,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 23,
+        "name": "Mikrowelle 23",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 8",
+        "weight": 9.08,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 644.07
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 668.11
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 777,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 24,
+        "name": "Waschmaschine 24",
+        "brand": "LG",
+        "color": "Silber",
+        "size": "Größe 9",
+        "weight": 7.23,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 457.05
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 430.53
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 158,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 25,
+        "name": "Trockner 25",
+        "brand": "AEG",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 24.91,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1291.27
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 287.21
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 286,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 26,
+        "name": "Geschirrspüler 26",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 8",
+        "weight": 13.31,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 636.52
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 687.23
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 27,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 27,
+        "name": "Ofen 27",
+        "brand": "AEG",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 13.71,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1431.57
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 167.52
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 263,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 28,
+        "name": "Ofen 28",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 9",
+        "weight": 10.38,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 922.3
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 399.79
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 918,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 29,
+        "name": "Trockner 29",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 4",
+        "weight": 11.37,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1485.07
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 163.85
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 88,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 30,
+        "name": "Mikrowelle 30",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 9",
+        "weight": 44.7,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 796.93
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 119.21
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 721,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 31,
+        "name": "Trockner 31",
+        "brand": "Bosch",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 43.79,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 548.54
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 309.83
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 222,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": false
+    },
+    {
+        "id": 32,
+        "name": "Ofen 32",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 17.36,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 534.83
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 268.78
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 658,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": true
+    },
+    {
+        "id": 33,
+        "name": "Trockner 33",
+        "brand": "Bosch",
+        "color": "Blau",
+        "size": "Größe 7",
+        "weight": 39.43,
+        "description": "Einfache Bedienung",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 337.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 125.79
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 134,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 34,
+        "name": "Trockner 34",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 9",
+        "weight": 11.44,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 463.92
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 998.31
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 348,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 35,
+        "name": "Trockner 35",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 9",
+        "weight": 13.86,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 597.7
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 237.31
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 271,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 36,
+        "name": "Ofen 36",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 7",
+        "weight": 31.74,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1176.22
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 125.93
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 542,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 37,
+        "name": "Trockner 37",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 23.9,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 494.11
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 107.1
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 786,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 38,
+        "name": "Trockner 38",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 7",
+        "weight": 25.06,
+        "description": "Viel Platz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1101.5
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 624.28
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 775,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 39,
+        "name": "Geschirrspüler 39",
+        "brand": "LG",
+        "color": "Schwarz",
+        "size": "Größe 3",
+        "weight": 14.26,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 486.36
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 918.69
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 411,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 40,
+        "name": "Geschirrspüler 40",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 6.41,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1076.92
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 754.61
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 110,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 41,
+        "name": "Geschirrspüler 41",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 7",
+        "weight": 35.57,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1377.72
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 203.03
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 494,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 42,
+        "name": "Geschirrspüler 42",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 9",
+        "weight": 39.21,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1460.72
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 118.88
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 490,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 43,
+        "name": "Trockner 43",
+        "brand": "Miele",
+        "color": "Rot",
+        "size": "Größe 8",
+        "weight": 29.41,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 960.19
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 642.15
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 813,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": true
+    },
+    {
+        "id": 44,
+        "name": "Ofen 44",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 4",
+        "weight": 31.35,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1486.04
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 154.14
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 652,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 45,
+        "name": "Kühlschrank 45",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 1",
+        "weight": 28.6,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 728.72
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 985.93
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 572,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 46,
+        "name": "Kühlschrank 46",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 1.08,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1458.78
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 901.92
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 206,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": true
+    },
+    {
+        "id": 47,
+        "name": "Trockner 47",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 3",
+        "weight": 44.19,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1217.26
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 415.34
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 633,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 48,
+        "name": "Mikrowelle 48",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 6",
+        "weight": 3.95,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 522.3
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 675.08
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 23,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 49,
+        "name": "Ofen 49",
+        "brand": "Bosch",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 20.13,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1035.24
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 935.41
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 618,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": true
+    },
+    {
+        "id": 50,
+        "name": "Kühlschrank 50",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 9",
+        "weight": 46.96,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 314.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 887.84
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 524,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": true
+    },
+    {
+        "id": 51,
+        "name": "Waschmaschine 51",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 8",
+        "weight": 40.18,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 366.49
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 149.66
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 530,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 52,
+        "name": "Ofen 52",
+        "brand": "Miele",
+        "color": "Rot",
+        "size": "Größe 2",
+        "weight": 8.84,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 654.69
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 756.67
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 213,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": true
+    },
+    {
+        "id": 53,
+        "name": "Trockner 53",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 8",
+        "weight": 44.1,
+        "description": "Hohe Energieeffizienz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1436.46
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 513.31
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 409,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": true
+    },
+    {
+        "id": 54,
+        "name": "Ofen 54",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 4",
+        "weight": 35.19,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 587.74
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 382.41
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 221,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 55,
+        "name": "Trockner 55",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 1",
+        "weight": 3.37,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1297.35
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 250.2
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 589,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 56,
+        "name": "Waschmaschine 56",
+        "brand": "LG",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 12.72,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1347.71
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 956.98
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 69,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 57,
+        "name": "Geschirrspüler 57",
+        "brand": "Samsung",
+        "color": "Rot",
+        "size": "Größe 9",
+        "weight": 27.55,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 961.31
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 491.37
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 782,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": true
+    },
+    {
+        "id": 58,
+        "name": "Ofen 58",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 5.2,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 637.49
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 224.97
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 263,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 59,
+        "name": "Waschmaschine 59",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 2",
+        "weight": 34.97,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1397.6
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 552.96
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 131,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 60,
+        "name": "Ofen 60",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 8",
+        "weight": 24.87,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 793.2
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 819.94
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 602,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 61,
+        "name": "Trockner 61",
+        "brand": "Samsung",
+        "color": "Schwarz",
+        "size": "Größe 6",
+        "weight": 9.58,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 371.92
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 100.65
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 408,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 62,
+        "name": "Ofen 62",
+        "brand": "Siemens",
+        "color": "Weiß",
+        "size": "Größe 5",
+        "weight": 43.12,
+        "description": "Einfache Bedienung",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 414.58
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 584.1
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 374,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 63,
+        "name": "Mikrowelle 63",
+        "brand": "LG",
+        "color": "Schwarz",
+        "size": "Größe 1",
+        "weight": 43.88,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 395.03
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 353.03
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 352,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 64,
+        "name": "Mikrowelle 64",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 8",
+        "weight": 14.98,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1034.29
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 735.76
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 839,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": false
+    },
+    {
+        "id": 65,
+        "name": "Trockner 65",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 16.78,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1497.98
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 764.07
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 274,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 66,
+        "name": "Trockner 66",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 13.59,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 858.07
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 577.42
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 69,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 67,
+        "name": "Ofen 67",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 11.13,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1014.74
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 235.31
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 342,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 68,
+        "name": "Trockner 68",
+        "brand": "Samsung",
+        "color": "Schwarz",
+        "size": "Größe 6",
+        "weight": 24.67,
+        "description": "Einfache Bedienung",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1027.79
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 936.72
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 687,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 69,
+        "name": "Trockner 69",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 6",
+        "weight": 44.63,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1139.04
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 257.47
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 428,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 70,
+        "name": "Waschmaschine 70",
+        "brand": "LG",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 18.41,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1138.0
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 455.17
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 316,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 71,
+        "name": "Geschirrspüler 71",
+        "brand": "LG",
+        "color": "Schwarz",
+        "size": "Größe 5",
+        "weight": 31.14,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1497.74
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 775.46
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 266,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": false
+    },
+    {
+        "id": 72,
+        "name": "Waschmaschine 72",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 19.83,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 591.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 913.36
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 758,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 73,
+        "name": "Waschmaschine 73",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 10",
+        "weight": 26.09,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1273.81
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 314.12
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 215,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 74,
+        "name": "Kühlschrank 74",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 20.01,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1119.94
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 179.95
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 220,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 75,
+        "name": "Trockner 75",
+        "brand": "Bosch",
+        "color": "Silber",
+        "size": "Größe 3",
+        "weight": 43.62,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 507.21
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 430.18
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 572,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 76,
+        "name": "Mikrowelle 76",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 8",
+        "weight": 47.07,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1396.59
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 302.02
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 417,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 77,
+        "name": "Waschmaschine 77",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 1.71,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 459.33
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 101.35
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 634,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 78,
+        "name": "Ofen 78",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 2",
+        "weight": 22.64,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1148.12
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 711.32
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 296,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 79,
+        "name": "Trockner 79",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 6",
+        "weight": 4.33,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 782.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 198.42
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 872,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 80,
+        "name": "Kühlschrank 80",
+        "brand": "Miele",
+        "color": "Schwarz",
+        "size": "Größe 7",
+        "weight": 10.96,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 750.22
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 932.76
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 589,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 81,
+        "name": "Ofen 81",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 7",
+        "weight": 25.08,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 595.71
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 198.74
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 526,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 82,
+        "name": "Ofen 82",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 30.51,
+        "description": "Hohe Energieeffizienz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1379.14
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 994.44
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 360,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": true
+    },
+    {
+        "id": 83,
+        "name": "Ofen 83",
+        "brand": "AEG",
+        "color": "Rot",
+        "size": "Größe 9",
+        "weight": 16.68,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 727.66
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 757.85
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 686,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 84,
+        "name": "Geschirrspüler 84",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 3.33,
+        "description": "Hohe Energieeffizienz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1053.64
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 329.05
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 473,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 85,
+        "name": "Mikrowelle 85",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 1",
+        "weight": 17.9,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1236.3
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 491.31
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 576,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 86,
+        "name": "Trockner 86",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 10",
+        "weight": 38.77,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 745.9
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 983.65
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 260,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 87,
+        "name": "Geschirrspüler 87",
+        "brand": "LG",
+        "color": "Rot",
+        "size": "Größe 2",
+        "weight": 17.08,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1182.62
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 290.24
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 473,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": true
+    },
+    {
+        "id": 88,
+        "name": "Mikrowelle 88",
+        "brand": "LG",
+        "color": "Rot",
+        "size": "Größe 7",
+        "weight": 49.88,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 455.07
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 819.39
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 775,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 89,
+        "name": "Kühlschrank 89",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 7",
+        "weight": 10.09,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1038.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 287.98
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 548,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 90,
+        "name": "Ofen 90",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 1",
+        "weight": 14.74,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 706.09
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 481.12
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 319,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 91,
+        "name": "Mikrowelle 91",
+        "brand": "Samsung",
+        "color": "Schwarz",
+        "size": "Größe 9",
+        "weight": 49.61,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 327.52
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 545.52
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 120,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 92,
+        "name": "Mikrowelle 92",
+        "brand": "Samsung",
+        "color": "Blau",
+        "size": "Größe 4",
+        "weight": 18.48,
+        "description": "Hohe Energieeffizienz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1197.63
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 348.66
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 497,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 93,
+        "name": "Trockner 93",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 10",
+        "weight": 20.16,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 875.14
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 326.04
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 663,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 94,
+        "name": "Kühlschrank 94",
+        "brand": "LG",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 44.61,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 572.16
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 980.26
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 155,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 95,
+        "name": "Ofen 95",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 1",
+        "weight": 49.74,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 551.88
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 514.36
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 347,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 96,
+        "name": "Waschmaschine 96",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 5",
+        "weight": 41.3,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1037.78
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 512.07
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 560,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 97,
+        "name": "Kühlschrank 97",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 2",
+        "weight": 30.12,
+        "description": "Hohe Energieeffizienz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 447.19
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 945.03
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 123,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": false
+    },
+    {
+        "id": 98,
+        "name": "Mikrowelle 98",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 3",
+        "weight": 40.53,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1473.42
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 998.06
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 104,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 99,
+        "name": "Waschmaschine 99",
+        "brand": "Miele",
+        "color": "Blau",
+        "size": "Größe 6",
+        "weight": 7.49,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1438.94
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 938.06
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 809,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": false
+    },
+    {
+        "id": 100,
+        "name": "Waschmaschine 100",
+        "brand": "Miele",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 34.32,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1130.5
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 217.79
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 439,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 101,
+        "name": "Ofen 101",
+        "brand": "Siemens",
+        "color": "Silber",
+        "size": "Größe 7",
+        "weight": 24.56,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1241.39
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 504.29
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 203,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 102,
+        "name": "Ofen 102",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 2",
+        "weight": 30.09,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1449.1
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 561.74
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 685,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 103,
+        "name": "Mikrowelle 103",
+        "brand": "AEG",
+        "color": "Schwarz",
+        "size": "Größe 10",
+        "weight": 47.77,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 626.53
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 107.28
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 902,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 104,
+        "name": "Ofen 104",
+        "brand": "AEG",
+        "color": "Schwarz",
+        "size": "Größe 9",
+        "weight": 24.37,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 983.94
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 497.67
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 150,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 105,
+        "name": "Mikrowelle 105",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 1",
+        "weight": 34.32,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1098.38
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 722.43
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 768,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 106,
+        "name": "Geschirrspüler 106",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 8",
+        "weight": 43.09,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1076.09
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 586.3
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 769,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 107,
+        "name": "Geschirrspüler 107",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 1",
+        "weight": 15.84,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1167.24
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 575.26
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 915,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 108,
+        "name": "Waschmaschine 108",
+        "brand": "Miele",
+        "color": "Schwarz",
+        "size": "Größe 10",
+        "weight": 3.68,
+        "description": "Einfache Bedienung",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1071.37
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 132.66
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 877,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 109,
+        "name": "Trockner 109",
+        "brand": "Siemens",
+        "color": "Silber",
+        "size": "Größe 4",
+        "weight": 49.58,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1458.09
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 605.74
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 316,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 110,
+        "name": "Mikrowelle 110",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 4",
+        "weight": 14.56,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1463.96
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 383.03
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 198,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 111,
+        "name": "Geschirrspüler 111",
+        "brand": "LG",
+        "color": "Silber",
+        "size": "Größe 4",
+        "weight": 42.51,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 643.69
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 866.5
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 217,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 112,
+        "name": "Geschirrspüler 112",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 2",
+        "weight": 6.91,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1084.02
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 705.82
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 272,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 113,
+        "name": "Waschmaschine 113",
+        "brand": "LG",
+        "color": "Schwarz",
+        "size": "Größe 3",
+        "weight": 27.07,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1217.61
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 477.14
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 214,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 114,
+        "name": "Ofen 114",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 10",
+        "weight": 49.64,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 443.88
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 820.17
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 535,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 115,
+        "name": "Kühlschrank 115",
+        "brand": "LG",
+        "color": "Blau",
+        "size": "Größe 4",
+        "weight": 33.84,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 513.88
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 127.98
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 779,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 116,
+        "name": "Mikrowelle 116",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 2",
+        "weight": 6.54,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1153.99
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 845.66
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 88,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 117,
+        "name": "Ofen 117",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 4",
+        "weight": 28.28,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 656.89
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 386.12
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 201,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 118,
+        "name": "Waschmaschine 118",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 5",
+        "weight": 1.42,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 411.1
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 654.47
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 701,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 119,
+        "name": "Mikrowelle 119",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 10",
+        "weight": 8.87,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1438.58
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 561.52
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 316,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 120,
+        "name": "Trockner 120",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 35.84,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 264.06
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 678.48
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 309,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 121,
+        "name": "Ofen 121",
+        "brand": "Miele",
+        "color": "Rot",
+        "size": "Größe 5",
+        "weight": 33.2,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 352.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 197.32
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 370,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 122,
+        "name": "Mikrowelle 122",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 3",
+        "weight": 7.73,
+        "description": "Einfache Bedienung",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1257.95
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 705.52
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 785,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 123,
+        "name": "Geschirrspüler 123",
+        "brand": "LG",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 41.22,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1111.76
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 920.74
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 482,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 124,
+        "name": "Ofen 124",
+        "brand": "LG",
+        "color": "Rot",
+        "size": "Größe 10",
+        "weight": 46.0,
+        "description": "Einfache Bedienung",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1076.04
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 467.24
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 740,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 125,
+        "name": "Ofen 125",
+        "brand": "Miele",
+        "color": "Rot",
+        "size": "Größe 7",
+        "weight": 3.49,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 973.53
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 944.66
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 168,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 126,
+        "name": "Kühlschrank 126",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 1",
+        "weight": 21.7,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 815.75
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 754.54
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 862,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 127,
+        "name": "Kühlschrank 127",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 14.26,
+        "description": "Einfache Bedienung",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 416.63
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 451.48
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 292,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 128,
+        "name": "Kühlschrank 128",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 30.63,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 455.21
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 778.91
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 44,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 129,
+        "name": "Kühlschrank 129",
+        "brand": "Bosch",
+        "color": "Blau",
+        "size": "Größe 1",
+        "weight": 46.93,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 752.64
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 888.92
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 664,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 130,
+        "name": "Trockner 130",
+        "brand": "Bosch",
+        "color": "Silber",
+        "size": "Größe 2",
+        "weight": 33.74,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 883.84
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 565.03
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 549,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 131,
+        "name": "Ofen 131",
+        "brand": "AEG",
+        "color": "Schwarz",
+        "size": "Größe 2",
+        "weight": 44.99,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 335.35
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 712.18
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 309,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 132,
+        "name": "Geschirrspüler 132",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 7",
+        "weight": 16.4,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 519.1
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 821.98
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 956,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 133,
+        "name": "Waschmaschine 133",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 6",
+        "weight": 5.18,
+        "description": "Hohe Energieeffizienz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 216.31
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 160.24
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 364,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 134,
+        "name": "Mikrowelle 134",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 9",
+        "weight": 8.2,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 258.1
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 663.28
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 479,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 135,
+        "name": "Waschmaschine 135",
+        "brand": "LG",
+        "color": "Blau",
+        "size": "Größe 7",
+        "weight": 30.41,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1140.79
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 393.52
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 196,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 136,
+        "name": "Geschirrspüler 136",
+        "brand": "Siemens",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 38.56,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1283.58
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 622.37
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 767,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": false
+    },
+    {
+        "id": 137,
+        "name": "Kühlschrank 137",
+        "brand": "LG",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 33.25,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1405.37
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 990.4
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 84,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 138,
+        "name": "Mikrowelle 138",
+        "brand": "Samsung",
+        "color": "Rot",
+        "size": "Größe 3",
+        "weight": 9.26,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1396.79
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 851.16
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 285,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 139,
+        "name": "Geschirrspüler 139",
+        "brand": "Siemens",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 17.53,
+        "description": "Einfache Bedienung",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 899.92
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 487.93
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 827,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 140,
+        "name": "Trockner 140",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 9",
+        "weight": 15.0,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1051.7
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 232.73
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 574,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 141,
+        "name": "Ofen 141",
+        "brand": "Bosch",
+        "color": "Blau",
+        "size": "Größe 8",
+        "weight": 28.71,
+        "description": "Viel Platz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1279.36
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 960.31
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 425,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 142,
+        "name": "Mikrowelle 142",
+        "brand": "LG",
+        "color": "Blau",
+        "size": "Größe 6",
+        "weight": 37.85,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1418.39
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 497.2
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 304,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 143,
+        "name": "Geschirrspüler 143",
+        "brand": "Siemens",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 34.0,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 253.17
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 933.3
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 604,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 144,
+        "name": "Trockner 144",
+        "brand": "AEG",
+        "color": "Silber",
+        "size": "Größe 10",
+        "weight": 16.84,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 512.38
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 280.63
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 366,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 145,
+        "name": "Mikrowelle 145",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 6",
+        "weight": 22.32,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 679.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 746.84
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 603,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 146,
+        "name": "Ofen 146",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 2",
+        "weight": 48.7,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 262.87
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 693.7
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 592,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 147,
+        "name": "Waschmaschine 147",
+        "brand": "LG",
+        "color": "Blau",
+        "size": "Größe 10",
+        "weight": 33.38,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 849.31
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 492.38
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 893,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": true
+    },
+    {
+        "id": 148,
+        "name": "Kühlschrank 148",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 8",
+        "weight": 39.98,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1286.76
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 781.18
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 740,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 149,
+        "name": "Ofen 149",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 1",
+        "weight": 21.55,
+        "description": "Geräuscharm",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 822.88
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 328.23
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 302,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 150,
+        "name": "Mikrowelle 150",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 8",
+        "weight": 9.89,
+        "description": "Hohe Energieeffizienz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1433.35
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 265.86
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 695,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 151,
+        "name": "Kühlschrank 151",
+        "brand": "Samsung",
+        "color": "Schwarz",
+        "size": "Größe 5",
+        "weight": 48.37,
+        "description": "Hohe Energieeffizienz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 260.92
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 597.8
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 150,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 152,
+        "name": "Ofen 152",
+        "brand": "AEG",
+        "color": "Schwarz",
+        "size": "Größe 10",
+        "weight": 15.61,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1162.01
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 853.97
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 247,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 153,
+        "name": "Trockner 153",
+        "brand": "Bosch",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 47.31,
+        "description": "Einfache Bedienung",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1282.95
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 270.06
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 66,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 154,
+        "name": "Ofen 154",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 1",
+        "weight": 16.84,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1343.82
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 850.35
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 77,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 155,
+        "name": "Mikrowelle 155",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 7",
+        "weight": 28.57,
+        "description": "Geräuscharm",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 742.75
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 431.26
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 928,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": false
+    },
+    {
+        "id": 156,
+        "name": "Mikrowelle 156",
+        "brand": "AEG",
+        "color": "Schwarz",
+        "size": "Größe 7",
+        "weight": 5.61,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1082.12
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 260.22
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 609,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 157,
+        "name": "Trockner 157",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 2",
+        "weight": 34.95,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1261.21
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 410.04
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 762,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": false
+    },
+    {
+        "id": 158,
+        "name": "Trockner 158",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 9",
+        "weight": 17.44,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1202.49
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 809.24
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 491,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 159,
+        "name": "Kühlschrank 159",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 20.5,
+        "description": "Viel Platz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1173.52
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 575.06
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 150,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 160,
+        "name": "Kühlschrank 160",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 3",
+        "weight": 25.47,
+        "description": "Viel Platz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1344.05
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 666.16
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 176,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 161,
+        "name": "Waschmaschine 161",
+        "brand": "Bosch",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 17.04,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 201.96
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 101.78
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 420,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 162,
+        "name": "Kühlschrank 162",
+        "brand": "LG",
+        "color": "Schwarz",
+        "size": "Größe 6",
+        "weight": 24.13,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1070.33
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 197.23
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 497,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 163,
+        "name": "Kühlschrank 163",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 5",
+        "weight": 30.87,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1072.54
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 238.67
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 345,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 164,
+        "name": "Mikrowelle 164",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 9",
+        "weight": 45.9,
+        "description": "Viel Platz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 356.17
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 139.57
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 531,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": true
+    },
+    {
+        "id": 165,
+        "name": "Kühlschrank 165",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 1",
+        "weight": 21.31,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1078.56
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 326.63
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 798,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 166,
+        "name": "Ofen 166",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 7",
+        "weight": 21.58,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1300.16
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 728.19
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 837,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 167,
+        "name": "Ofen 167",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 4",
+        "weight": 14.33,
+        "description": "Einfache Bedienung",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 517.71
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 131.65
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 988,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 168,
+        "name": "Mikrowelle 168",
+        "brand": "Samsung",
+        "color": "Blau",
+        "size": "Größe 2",
+        "weight": 8.08,
+        "description": "Hohe Energieeffizienz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1260.82
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 962.81
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 747,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 169,
+        "name": "Geschirrspüler 169",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 3",
+        "weight": 8.75,
+        "description": "Geräuscharm",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1152.36
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 732.79
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 996,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 170,
+        "name": "Kühlschrank 170",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 9",
+        "weight": 35.94,
+        "description": "Geräuscharm",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 573.59
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 173.18
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 383,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": false
+    },
+    {
+        "id": 171,
+        "name": "Waschmaschine 171",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 3",
+        "weight": 40.03,
+        "description": "Hohe Energieeffizienz",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 207.01
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 316.6
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 282,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": false
+    },
+    {
+        "id": 172,
+        "name": "Geschirrspüler 172",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 8",
+        "weight": 7.38,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 494.77
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 108.09
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 485,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 173,
+        "name": "Trockner 173",
+        "brand": "Siemens",
+        "color": "Weiß",
+        "size": "Größe 2",
+        "weight": 1.73,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1123.11
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 871.45
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 40,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 174,
+        "name": "Kühlschrank 174",
+        "brand": "AEG",
+        "color": "Rot",
+        "size": "Größe 1",
+        "weight": 32.78,
+        "description": "Hohe Energieeffizienz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1126.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 309.73
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 706,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 175,
+        "name": "Waschmaschine 175",
+        "brand": "AEG",
+        "color": "Schwarz",
+        "size": "Größe 7",
+        "weight": 4.08,
+        "description": "Hohe Energieeffizienz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 463.6
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 951.38
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 441,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 176,
+        "name": "Geschirrspüler 176",
+        "brand": "Miele",
+        "color": "Silber",
+        "size": "Größe 2",
+        "weight": 21.75,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1355.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 989.27
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 439,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 177,
+        "name": "Ofen 177",
+        "brand": "LG",
+        "color": "Silber",
+        "size": "Größe 4",
+        "weight": 23.59,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 694.99
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 275.75
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 873,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": true
+    },
+    {
+        "id": 178,
+        "name": "Trockner 178",
+        "brand": "Miele",
+        "color": "Rot",
+        "size": "Größe 7",
+        "weight": 30.97,
+        "description": "Hohe Energieeffizienz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 247.54
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 772.28
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 740,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 179,
+        "name": "Mikrowelle 179",
+        "brand": "AEG",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 37.25,
+        "description": "Hohe Energieeffizienz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1260.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 917.34
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 503,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 180,
+        "name": "Mikrowelle 180",
+        "brand": "Bosch",
+        "color": "Schwarz",
+        "size": "Größe 2",
+        "weight": 22.4,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 444.14
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 652.54
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 239,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": false
+    },
+    {
+        "id": 181,
+        "name": "Trockner 181",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 5",
+        "weight": 25.12,
+        "description": "Viel Platz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 280.52
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 111.08
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 428,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 182,
+        "name": "Mikrowelle 182",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 5",
+        "weight": 45.13,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 491.46
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 173.94
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 390,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 183,
+        "name": "Geschirrspüler 183",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 7",
+        "weight": 8.63,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 268.39
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 865.32
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 80,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
+    },
+    {
+        "id": 184,
+        "name": "Kühlschrank 184",
+        "brand": "Samsung",
+        "color": "Blau",
+        "size": "Größe 9",
+        "weight": 37.1,
+        "description": "Einfache Bedienung",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 851.22
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 302.29
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 150,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 8",
+        "discontinued": false
+    },
+    {
+        "id": 185,
+        "name": "Kühlschrank 185",
+        "brand": "Bosch",
+        "color": "Silber",
+        "size": "Größe 1",
+        "weight": 8.48,
+        "description": "Viel Platz",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 794.35
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 379.39
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 53,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 186,
+        "name": "Waschmaschine 186",
+        "brand": "AEG",
+        "color": "Weiß",
+        "size": "Größe 3",
+        "weight": 2.19,
+        "description": "Viel Platz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 241.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 265.49
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 663,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 187,
+        "name": "Mikrowelle 187",
+        "brand": "Bosch",
+        "color": "Blau",
+        "size": "Größe 3",
+        "weight": 23.81,
+        "description": "Viel Platz",
+        "category": "Ofen",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1100.65
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 987.66
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 367,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 1",
+        "discontinued": false
+    },
+    {
+        "id": 188,
+        "name": "Kühlschrank 188",
+        "brand": "Samsung",
+        "color": "Silber",
+        "size": "Größe 2",
+        "weight": 2.41,
+        "description": "Viel Platz",
+        "category": "Mikrowelle",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 610.53
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 640.76
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 553,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 189,
+        "name": "Waschmaschine 189",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 1",
+        "weight": 17.71,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1009.5
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 529.74
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 698,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 9",
+        "discontinued": false
+    },
+    {
+        "id": 190,
+        "name": "Kühlschrank 190",
+        "brand": "Siemens",
+        "color": "Rot",
+        "size": "Größe 4",
+        "weight": 36.82,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 574.32
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 367.71
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 421,
+        "packagingSize": "Größe 1",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 191,
+        "name": "Geschirrspüler 191",
+        "brand": "Siemens",
+        "color": "Silber",
+        "size": "Größe 2",
+        "weight": 17.54,
+        "description": "Einfache Bedienung",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1492.29
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 640.23
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 434,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": true
+    },
+    {
+        "id": 192,
+        "name": "Geschirrspüler 192",
+        "brand": "LG",
+        "color": "Weiß",
+        "size": "Größe 9",
+        "weight": 4.93,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 701.72
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 783.56
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 216,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 6",
+        "discontinued": true
+    },
+    {
+        "id": 193,
+        "name": "Ofen 193",
+        "brand": "Samsung",
+        "color": "Weiß",
+        "size": "Größe 9",
+        "weight": 29.44,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 372.32
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 647.39
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 558,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": true
+    },
+    {
+        "id": 194,
+        "name": "Kühlschrank 194",
+        "brand": "Siemens",
+        "color": "Blau",
+        "size": "Größe 9",
+        "weight": 31.12,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1259.77
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 619.79
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 30,
+        "stock": 758,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": true
+    },
+    {
+        "id": 195,
+        "name": "Ofen 195",
+        "brand": "Samsung",
+        "color": "Rot",
+        "size": "Größe 8",
+        "weight": 31.28,
+        "description": "Geräuscharm",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 217.08
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 380.37
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 20,
+        "stock": 946,
+        "packagingSize": "Größe 2",
+        "packagingWeight": "Gewicht 4",
+        "discontinued": false
+    },
+    {
+        "id": 196,
+        "name": "Trockner 196",
+        "brand": "Bosch",
+        "color": "Rot",
+        "size": "Größe 6",
+        "weight": 20.31,
+        "description": "Einfache Bedienung",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 725.85
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 485.27
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 985,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 5",
+        "discontinued": false
+    },
+    {
+        "id": 197,
+        "name": "Mikrowelle 197",
+        "brand": "Samsung",
+        "color": "Rot",
+        "size": "Größe 5",
+        "weight": 22.79,
+        "description": "Geräuscharm",
+        "category": "Waschmaschine",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 1491.28
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 550.0
+            }
+        ],
+        "discounted": false,
+        "discountAmount": 10,
+        "stock": 15,
+        "packagingSize": "Größe 5",
+        "packagingWeight": "Gewicht 10",
+        "discontinued": false
+    },
+    {
+        "id": 198,
+        "name": "Trockner 198",
+        "brand": "Bosch",
+        "color": "Silber",
+        "size": "Größe 7",
+        "weight": 48.39,
+        "description": "Geräuscharm",
+        "category": "Trockner",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 733.39
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 617.95
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 30,
+        "stock": 26,
+        "packagingSize": "Größe 3",
+        "packagingWeight": "Gewicht 7",
+        "discontinued": true
+    },
+    {
+        "id": 199,
+        "name": "Waschmaschine 199",
+        "brand": "Miele",
+        "color": "Weiß",
+        "size": "Größe 6",
+        "weight": 10.65,
+        "description": "Hohe Energieeffizienz",
+        "category": "Geschirrspüler",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 767.0
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 106.41
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 10,
+        "stock": 134,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 3",
+        "discontinued": false
+    },
+    {
+        "id": 200,
+        "name": "Kühlschrank 200",
+        "brand": "Siemens",
+        "color": "Schwarz",
+        "size": "Größe 8",
+        "weight": 38.77,
+        "description": "Hohe Energieeffizienz",
+        "category": "Kühlschrank",
+        "prices": [
+            {
+                "validFrom": "13.04.2020",
+                "validTo": "13.04.2021",
+                "price": 686.31
+            },
+            {
+                "validFrom": "13.04.2021",
+                "validTo": "13.04.2022",
+                "price": 550.26
+            }
+        ],
+        "discounted": true,
+        "discountAmount": 20,
+        "stock": 942,
+        "packagingSize": "Größe 4",
+        "packagingWeight": "Gewicht 2",
+        "discontinued": false
     }
-  ],
-  "discounted": true,
-  "discountAmount": 19,
-  "stock": 420,
-  "packagingSize": "pSize 2",
-  "packagingWeigth": "pWeigth 2",
-  "discontinued": false
-  }
 ]
