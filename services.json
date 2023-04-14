@@ -128,7 +128,7 @@
       }
     ],
     "availability": true,
-    "category": "versicherung",
+    "category": "wartung",
     "contractPeriodInDays": 730,
     "discount": false,
     "discountAmountInPercent": null
@@ -145,7 +145,7 @@
       }
     ],
     "availability": true,
-    "category": "versicherung",
+    "category": "wartung",
     "contractPeriodInDays": 365,
     "discount": true,
     "discountAmountInPercent": 0.1
