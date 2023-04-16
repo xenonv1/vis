@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs');
 
 const app = express();
 
@@ -14,5 +15,12 @@ app.listen(port,ipAddr, () => {
 /* - - - endpoints - - - */
 
 app.get('/products', (req, res) => {
-    res.json(products);
+    fs.readFile('products.json', 'utf-8', (err, data) => {
+        if(err) {
+            console.error(err);
+            return req.statusCode(500), send('Error reading Products');
+        }
+        const products = JSON.parse(data);
+        res.json(products);
+    });
   });
