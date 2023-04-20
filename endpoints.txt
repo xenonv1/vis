@@ -1,0 +1,18 @@
+Planned Endpoints:
+
+GET:
+! .../products - maxi
+! .../services - niklas
+! .../product/{id} - maxi
+! .../service/{id} - niklas
+
+POST:
+
+PUT:
+
+.../create
+.../update/{id}
+
+DELETE:
+
+.../delete/{id}
