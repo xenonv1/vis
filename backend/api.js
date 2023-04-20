@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
+const db = require("db-local");
 
 const app = express();
 
@@ -9,18 +10,45 @@ app.use(cors());
 const ipAddr = "127.0.0.1";
 const port = 8000;
 
-let products;
+const { Schema } = new db({ path: "./databases" });
+
+const Product = Schema("Products", {
+  name: { type: String, required: true },
+  brand: String,
+  color: String,
+  size: String,
+  weight: Number,
+  description: String,
+  category: String,
+  prices: Array,
+  discounted: Boolean,
+  discountAmount: Number,
+  stock: Number,
+  packagingSize: String,
+  packagingWeight: String,
+  discontinued: Boolean,
+});
+
+const Service = Schema("Services", {
+  name: { type: String, required: true },
+  description: String,
+  prices: [
+    {
+      validFrom: String,
+      validTo: String,
+      price: Number,
+    },
+  ],
+  availability: Boolean,
+  category: String,
+  contractPeriodInDays: Number,
+  discount: Boolean,
+  discountAmount: Number,
+});
 
 /*- - - reading files - - -*/
 
-fs.readFile("products.json", "utf8", (err, data) => {
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  }
-  products = JSON.parse(data);
-});
-
+const products = JSON.parse(fs.readFileSync("./products.json", "utf-8"));
 const services = JSON.parse(fs.readFileSync("./services.json", "utf-8"));
 
 /* - - - server - - - */

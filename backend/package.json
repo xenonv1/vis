@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "db-local": "^2.9.1",
     "express": "^4.18.2"
   }
 }
