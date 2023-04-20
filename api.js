@@ -24,7 +24,7 @@ app.get("/services", (req, res) => {
   res.end(JSON.stringify(services));
 });
 
-app.get("/service/:pid", (req, res) => {
+app.get("/services/:pid", (req, res) => {
   res.set("Content-Type", "application/json");
 
   const pid = req.params.pid;
