@@ -11,7 +11,7 @@ const port = 8000;
 
 let products;
 
-/* - - - server - - - */
+/*- - - reading files - - -*/
 
 fs.readFile("products.json", "utf8", (err, data) => {
   if (err) {
@@ -19,9 +19,6 @@ fs.readFile("products.json", "utf8", (err, data) => {
     process.exit(1);
   }
   products = JSON.parse(data);
-  app.listen(port, ipAddr, () => {
-    console.log(`Now listening on ${ipAddr}:${port}...`);
-  });
 });
 
 const services = JSON.parse(fs.readFileSync("./services.json", "utf-8"));
