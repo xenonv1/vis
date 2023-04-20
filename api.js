@@ -1,23 +1,55 @@
+const express = require('express');
 const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
 
 const app = express();
+const fs = require('fs');
 
 app.use(cors());
 
 const ipAddr = "127.0.0.1";
 const port = 8000;
 
+let products;
+
+/* - - - server - - - */
+
+fs.readFile('products.json', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    }
+    products = JSON.parse(data);
+    app.listen(port, ipAddr, () => {
+        console.log(`Now listening on ${ipAddr}:${port}...`);
+    });
+    
 const services = JSON.parse(fs.readFileSync("./services.json", "utf-8"));
 
 /* - - - server - - - */
 
 app.listen(port, ipAddr, () => {
   console.log(`Now listening on ${ipAddr}:${port}...`);
+
 });
 
 /* - - - endpoints - - - */
+
+
+app.get('/products', (req, res) => {
+    res.json(products);
+});
+
+app.get('/products/:id', (req, res) => {
+    const id = req.params.id;
+    const product = products.find(p => p.id === parseInt(id));
+    if (!product) {
+        res.status(404).send('Product not found');
+        return;
+    }
+    res.json(product);
+});
 
 app.get("/services", (req, res) => {
   res.set("Content-Type", "application/json");
@@ -42,3 +74,4 @@ app.get("/services/:pid", (req, res) => {
 });
 
 /* - - - functions - - - */
+
