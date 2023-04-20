@@ -29,7 +29,7 @@ app.listen(port, ipAddr, () => {
   console.log(`Now listening on ${ipAddr}:${port}...`);
 });
 
-/* - - - endpoints - - - */
+/* - - - endpoints - - -  v1*/
 
 app.get("/products", (req, res) => {
   res.json(products);
@@ -65,4 +65,50 @@ app.get("/services/:pid", (req, res) => {
   } else {
     res.end(`service with id ${pid} not found.`);
   }
+});
+
+/* - - - v2 - - -*/
+
+app.get("/v2/products", (req, res) => {
+  if (!products) {
+    res.status(404).end("404 Not Found");
+  } else {
+    res.json(products);
+  }
+});
+
+app.get("/v2/products/:id", (req, res) => {
+  const id = req.params.id;
+
+  const product = products.find((p) => p.id == id);
+
+  if (!product) {
+    res.status(404).end("404 Not Found");
+  } else {
+    res.json(product);
+  }
+});
+
+app.get("/v2/services", (req, res) => {
+  if (!services) {
+    res.status(404).end("404 Not Found");
+  } else {
+    res.json(services);
+  }
+});
+
+app.get("/v2/services/:id", (req, res) => {
+  const id = req.params.id;
+
+  const service = services.find((s) => s.id == id);
+
+  if (!service) {
+    res.status(404).end("404 Not Found");
+  } else {
+    res.json(service);
+  }
+});
+
+app.get("*", (req, res) => {
+  res.status(404).end("404 Not Found");
 });
