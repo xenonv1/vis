@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "name": "Wartungsservice für elektronische Geräte",
+    "description": "Regelmäßige Wartung von elektronischen Haushaltsgeräten wie Waschmaschinen, Trocknern, Kühlschränken usw.",
+    "prices": [
+      {
+        "validFrom": "2023-05-01",
+        "validTo": "2024-04-30",
+        "price": 79.99
+      },
+      {
+        "validFrom": "2024-05-01",
+        "validTo": "2025-04-30",
+        "price": 89.99
+      }
+    ],
+    "availability": true,
+    "category": "Wartungsservice",
+    "contractPeriodInDays": 365,
+    "discount": true,
+    "discountAmount": 10
+  },
+  {
+    "id": 2,
+    "name": "Liefer- und Montageservice für Haushaltsgeräte",
+    "description": "Lieferung und fachgerechte Montage von Haushaltsgeräten wie Waschmaschinen, Trocknern, Kühlschränken usw.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-04-30",
+        "price": 119.99
+      },
+      {
+        "validFrom": "2023-05-01",
+        "validTo": "2024-04-30",
+        "price": 129.99
+      },
+      {
+        "validFrom": "2024-05-01",
+        "validTo": "2025-04-30",
+        "price": 139.99
+      }
+    ],
+    "availability": true,
+    "category": "Montageservice",
+    "contractPeriodInDays": null,
+    "discount": false,
+    "discountAmount": 0
+  },
+  {
+    "id": 3,
+    "name": "Installationsservice für Küchengeräte",
+    "description": "Fachgerechte Installation von Küchengeräten wie Herd, Backofen, Geschirrspüler usw.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-04-30",
+        "price": 95.99
+      },
+      {
+        "validFrom": "2023-05-01",
+        "validTo": "2024-04-30",
+        "price": 99.99
+      },
+      {
+        "validFrom": "2024-05-01",
+        "validTo": "2025-04-30",
+        "price": 109.99
+      }
+    ],
+    "availability": true,
+    "category": "Installationsservice",
+    "contractPeriodInDays": null,
+    "discount": true,
+    "discountAmount": 20
+  },
+  {
+    "id": 4,
+    "name": "Reparaturservice für Haushaltsgeräte",
+    "description": "Unsere erfahrenen Techniker reparieren Ihr defektes Haushaltsgerät schnell und zuverlässig. Wir reparieren unter anderem Waschmaschinen, Trockner, Geschirrspüler, Kühlschränke und Herde.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": 59.99
+      }
+    ],
+    "availability": true,
+    "category": "Service",
+    "contractPeriodInDays": null,
+    "discount": false,
+    "discountAmount": null
+  },
+  {
+    "id": 5,
+    "name": "Liefer- und Aufbauservice",
+    "description": "Wir liefern Ihr neues Gerät direkt zu Ihnen nach Hause und bauen es fachgerecht für Sie auf.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": 49.99
+      }
+    ],
+    "availability": false,
+    "category": "Service",
+    "contractPeriodInDays": null,
+    "discount": true,
+    "discountAmount": 10
+  },
+  {
+    "id": 6,
+    "name": "Entsorgungsservice",
+    "description": "Wir entsorgen Ihr altes Gerät umweltgerecht und kümmern uns um die fachgerechte Entsorgung.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": 29.99
+      }
+    ],
+    "availability": true,
+    "category": "Service",
+    "contractPeriodInDays": null,
+    "discount": true,
+    "discountAmount": 10
+  },
+  {
+    "id": 7,
+    "name": "Reparaturservice",
+    "description": "Unsere erfahrenen Techniker reparieren Ihr defektes Gerät schnell und zuverlässig.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": 59.99
+      }
+    ],
+    "availability": true,
+    "category": "Service",
+    "contractPeriodInDays": null,
+    "discount": false,
+    "discountAmount": null
+  },
+  {
+    "id": 8,
+    "name": "Einweisungsservice",
+    "description": "Unser geschultes Personal weist Sie in die Funktionen Ihres neuen Geräts ein.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": 19.99
+      }
+    ],
+    "availability": true,
+    "category": "Service",
+    "contractPeriodInDays": null,
+    "discount": true,
+    "discountAmount": 100
+  },
+  {
+    "id": 9,
+    "name": "Wartungsservice",
+    "description": "Unsere Techniker führen regelmäßige Wartungsarbeiten an Ihrem Gerät durch, um die optimale Funktion zu gewährleisten.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": 99.99
+      }
+    ],
+    "availability": false,
+    "category": "Service",
+    "contractPeriodInDays": 365,
+    "discount": true,
+    "discountAmount": 15
+  },
+  {
+    "id": 10,
+    "name": "Finanzierungsservice",
+    "description": "Sie möchten Ihr neues Gerät in Raten zahlen? Kein Problem, wir bieten Ihnen attraktive Finanzierungsmöglichkeiten an.",
+    "prices": [
+      {
+        "validFrom": "2023-01-01",
+        "validTo": "2023-12-31",
+        "price": null
+      }
+    ],
+    "availability": true,
+    "category": "Service",
+    "contractPeriodInDays": null,
+    "discount": false,
+    "discountAmount": null
+  }
+]
