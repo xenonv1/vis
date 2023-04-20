@@ -1,7 +1,10 @@
 const express = require("express");
 const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
 
 const ipAddr = "127.0.0.1";
 const port = 8000;
