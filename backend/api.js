@@ -48,8 +48,10 @@ const Service = Schema("Services", {
 
 /*- - - reading files - - -*/
 
+/*
 const products = JSON.parse(fs.readFileSync("./products.json", "utf-8"));
 const services = JSON.parse(fs.readFileSync("./services.json", "utf-8"));
+*/
 
 /* - - - server - - - */
 
@@ -60,7 +62,7 @@ app.listen(port, ipAddr, () => {
 /* - - - endpoints - - -  v1*/
 
 app.get("/products", (req, res) => {
-  res.json(products);
+  res.json(Product.find());
 });
 
 app.get("/products/:id", (req, res) => {
@@ -98,17 +100,13 @@ app.get("/services/:pid", (req, res) => {
 /* - - - v2 - - -*/
 
 app.get("/v2/products", (req, res) => {
-  if (!products) {
-    res.status(404).end("404 Not Found");
-  } else {
-    res.json(products);
-  }
+  res.json(Product.find());
 });
 
 app.get("/v2/products/:id", (req, res) => {
   const id = req.params.id;
 
-  const product = products.find((p) => p.id == id);
+  const product = Product.findOne({ _id: `${id}` });
 
   if (!product) {
     res.status(404).end("404 Not Found");
@@ -118,17 +116,13 @@ app.get("/v2/products/:id", (req, res) => {
 });
 
 app.get("/v2/services", (req, res) => {
-  if (!services) {
-    res.status(404).end("404 Not Found");
-  } else {
-    res.json(services);
-  }
+  res.json(Service.find());
 });
 
 app.get("/v2/services/:id", (req, res) => {
   const id = req.params.id;
 
-  const service = services.find((s) => s.id == id);
+  const service = Service.findOne({ _id: `${id}` });
 
   if (!service) {
     res.status(404).end("404 Not Found");
