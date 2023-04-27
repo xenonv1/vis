@@ -258,3 +258,59 @@ app.put("/v2/services/update/:id", (req, res) => {
 app.get("*", (req, res) => {
   res.status(404).end("404 Not Found");
 });
+
+app.post("/products/create/post", (req, res) =>  {
+  const data = req.body;
+
+  try {
+    Product.create({
+      name: data.name,
+      brand: data.brand,
+      color: data.color,
+      size: data.size,
+      weight: data.weight,
+      description: data.description,
+      category: data.category,
+      prices: data.prices,
+      discounted: data.discounted,
+      discountAmount: data.discountAmount,
+      stock: data.stock,
+      packagingSize: data.packagingSize,
+      packagingWeight: data.packagingWeight,
+      discontinued: data.discontinued,
+    }).save();
+
+    res.status(201).send(`Product ${data.name} was successfully created.`);
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reach out to the admin."
+      );
+  }
+});
+
+app.post("/services/create/post", (req, res) =>  {
+  const data = req.body;
+
+  try {
+    Service.create({
+      name: data.name,
+      description: data.description,
+      prices: data.prices,
+      availability: data.availability,
+      category: data.category,
+      contractPeriodInDays: data.contractPeriodInDays,
+      discount: data.discount,
+      discountAmount: data.discountAmount,
+    }).save();
+
+    res.status(201).send(`Service ${data.name} was successfully created.`);
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reacht out to the admin."
+      );
+  }
+});
