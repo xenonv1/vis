@@ -1,22 +1,21 @@
-# Verteilte und Intelligente Systeme - IM-Master SoSe 2023
+API-Dokumentation "Verteilte und intelligente Systeme-API"
 
-Repository für die REST-Schnittstelle im Rahmen der Veranstaltung "Verteilte und Intelligente Systeme" inkl. entsprechenden Daten.
+Version 1: "/..."
 
-## Endpoints:
+- Version 1 wird nicht länger unterstützt und sollte nicht mehr aufgerufen werden.
 
-## v1 "/..."
+Version 2: "v2/..."
 
-Version 1 wird nicht länger unterstützt und sollte nicht mehr aufgerufen werden.
+GET 
+    "/products" - Rückgabe aller Produkte im JSON-Format
+    "/products/:id" - Rückgabe des zur Id zugehörigen Produktes im JSON-Format
+    "/services" - Rückgabe aller Services im JSON-Format
+    "/services/:id" - Rückgabe des zur Id zugehörigen Service im JSON-Format
 
-## v2 "v2/..."
+PUT
+    "/products/create" - Erstellen eines neuen Produktes
 
-### Products:
-
-**GET .../products** - Rückgabe aller Produkte im JSON-Format
-**GET .../products/:id** - Rückgabe des zur Id zugehörigen Produktes im JSON-Format
-**PUT .../products/create** - Erstellen eines neuen Produktes
-
-Content-Type: application/json
+    Content-Type: application/json
 
     Felder im Body:
 
@@ -40,13 +39,9 @@ Content-Type: application/json
         packagingWeight: String,
         discounted: Boolean
 
-### Services:
+    "/services/create" - Erstellen eines neuen Services
 
-**GET .../services** - Rückgabe aller Services im JSON-Format
-**GET .../services/:id** - Rückgabe des zur Id zugehörigen Service im JSON-Format
-**PUT .../services/create** - Erstellen eines neuen Services
-
-Content-Type: application/json
+    Content-Type: application/json
 
     Felder im Body:
 
@@ -63,3 +58,4 @@ Content-Type: application/json
         contractPeriodInDays: Number,
         discount: Boolean,
         discountAmount: Number
+        
