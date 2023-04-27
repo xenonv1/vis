@@ -2,10 +2,12 @@ const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
 const db = require("db-local");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 app.use(cors());
+app.use(bodyParser.json());
 
 const ipAddr = "127.0.0.1";
 const port = 8000;
@@ -128,6 +130,62 @@ app.get("/v2/services/:id", (req, res) => {
     res.status(404).end("404 Not Found");
   } else {
     res.json(service);
+  }
+});
+
+app.put("/v2/products/create", (req, res) => {
+  const data = req.body;
+
+  try {
+    Product.create({
+      name: data.name,
+      brand: data.brand,
+      color: data.color,
+      size: data.size,
+      weight: data.weight,
+      description: data.description,
+      category: data.category,
+      prices: data.prices,
+      discounted: data.discounted,
+      discountAmount: data.discountAmount,
+      stock: data.stock,
+      packagingSize: data.packagingSize,
+      packagingWeight: data.packagingWeight,
+      discontinued: data.discontinued,
+    }).save();
+
+    res.status(201).send(`Product ${data.name} was successfully created.`);
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reach out to the admin."
+      );
+  }
+});
+
+app.put("/v2/services/create", (req, res) => {
+  const data = req.body;
+
+  try {
+    Service.create({
+      name: data.name,
+      description: data.description,
+      prices: data.prices,
+      availability: data.availability,
+      category: data.category,
+      contractPeriodInDays: data.contractPeriodInDays,
+      discount: data.discount,
+      discountAmount: data.discountAmount,
+    }).save();
+
+    res.status(201).send(`Service ${data.name} was successfully created.`);
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reacht out to the admin."
+      );
   }
 });
 
