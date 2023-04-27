@@ -38,11 +38,57 @@ Content-Type: application/json
         packagingWeight: String,
         discounted: Boolean
 
+</br>
+
+**PUT .../products/update/:id** - Update eines bestehende Produkts anhand der Id
+
+Content-Type: application/json
+
+        name: String (required),
+        brand: String,
+        color: String,
+        size: String,
+        weight: Number,
+        description: String,
+        category: String,
+        prices: Array
+            {
+                validFrom: String,
+                validTo: String,
+                price: Number
+            },
+        discounted: Boolean,
+        discountAmount: Number,
+        stock: Number,
+        packagingSize: String,
+        packagingWeight: String,
+        discounted: Boolean
+
 ### Services:
 
 **GET .../services** - Rückgabe aller Services im JSON-Format</br>
 **GET .../services/:id** - Rückgabe des zur Id zugehörigen Service im JSON-Format</br>
 **PUT .../services/create** - Erstellen eines neuen Services
+
+Content-Type: application/json
+
+        name: String (required),
+        description: String,
+        prices: Array
+                        {
+                validFrom: String,
+                validTo: String,
+                price: Number
+            },
+        availability: Boolean,
+        category: String,
+        contractPeriodInDays: Number,
+        discount: Boolean,
+        discountAmount: Number
+
+</br>
+
+**PUT .../services/update/:id** - Update eines bestehenden Service auf Basis der Id
 
 Content-Type: application/json
 

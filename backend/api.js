@@ -189,6 +189,72 @@ app.put("/v2/services/create", (req, res) => {
   }
 });
 
+app.put("/v2/products/update/:id", (req, res) => {
+  const productId = req.params.id;
+  const productData = req.body;
+
+  const product = Product.findOne({ _id: productId });
+
+  try {
+    if (!product) {
+      res.status(404).send("404 Not Found");
+    } else {
+      Product.update({
+        name: productData.name,
+        brand: productData.brand,
+        color: productData.color,
+        size: productData.size,
+        weight: productData.weight,
+        description: productData.description,
+        category: productData.category,
+        prices: productData.prices,
+        discounted: productData.discounted,
+        discountAmount: productData.discountAmount,
+        stock: productData.stock,
+        packagingSize: productData.packagingSize,
+        packagingWeight: productData.packagingWeight,
+        discontinued: productData.discontinued,
+      }).save();
+    }
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reacht out to the admin."
+      );
+  }
+});
+
+app.put("/v2/services/update/:id", (req, res) => {
+  const serviceId = req.params.id;
+  const serviceData = req.body;
+
+  const service = Service.findOne({ _id: serviceId });
+
+  try {
+    if (!service) {
+      res.status(404).send("404 Not Found");
+    } else {
+      Service.update({
+        name: serviceData.name,
+        description: serviceData.description,
+        prices: serviceData.prices,
+        availability: serviceData.availability,
+        category: serviceData.category,
+        contractPeriodInDays: serviceData.contractPeriodInDays,
+        discount: serviceData.discount,
+        discountAmount: serviceData.discountAmount,
+      }).save();
+    }
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reacht out to the admin."
+      );
+  }
+});
+
 app.get("*", (req, res) => {
   res.status(404).end("404 Not Found");
 });
