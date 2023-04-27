@@ -12,13 +12,11 @@ Version 1 wird nicht länger unterstützt und sollte nicht mehr aufgerufen werde
 
 ### Products:
 
-**GET .../products** - Rückgabe aller Produkte im JSON-Format
-**GET .../products/:id** - Rückgabe des zur Id zugehörigen Produktes im JSON-Format
+**GET .../products** - Rückgabe aller Produkte im JSON-Format</br>
+**GET .../products/:id** - Rückgabe des zur Id zugehörigen Produktes im JSON-Format</br>
 **PUT .../products/create** - Erstellen eines neuen Produktes
 
 Content-Type: application/json
-
-    Felder im Body:
 
         name: String (required),
         brand: String,
@@ -42,13 +40,11 @@ Content-Type: application/json
 
 ### Services:
 
-**GET .../services** - Rückgabe aller Services im JSON-Format
-**GET .../services/:id** - Rückgabe des zur Id zugehörigen Service im JSON-Format
+**GET .../services** - Rückgabe aller Services im JSON-Format</br>
+**GET .../services/:id** - Rückgabe des zur Id zugehörigen Service im JSON-Format</br>
 **PUT .../services/create** - Erstellen eines neuen Services
 
 Content-Type: application/json
-
-    Felder im Body:
 
         name: String (required),
         description: String,
