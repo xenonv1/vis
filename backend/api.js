@@ -34,13 +34,7 @@ const Product = Schema("Products", {
 const Service = Schema("Services", {
   name: { type: String, required: true },
   description: String,
-  prices: [
-    {
-      validFrom: String,
-      validTo: String,
-      price: Number,
-    },
-  ],
+  prices: Array,
   availability: Boolean,
   category: String,
   contractPeriodInDays: Number,
@@ -61,7 +55,7 @@ app.listen(port, ipAddr, () => {
   console.log(`Now listening on ${ipAddr}:${port}...`);
 });
 
-/* - - - endpoints - - -  v1*/
+/* - - - endpoints - - -  v1
 
 app.get("/products", (req, res) => {
   res.json(Product.find());
@@ -98,6 +92,8 @@ app.get("/services/:pid", (req, res) => {
     res.end(`service with id ${pid} not found.`);
   }
 });
+
+*/
 
 /* - - - v2 - - -*/
 
@@ -199,6 +195,7 @@ app.put("/v2/products/update/:id", (req, res) => {
     if (!product) {
       res.status(404).send("404 Not Found");
     } else {
+      console.log("if");
       Product.update({
         name: productData.name,
         brand: productData.brand,
@@ -217,6 +214,7 @@ app.put("/v2/products/update/:id", (req, res) => {
       }).save();
     }
   } catch {
+    console.log("else");
     res
       .status(500)
       .send(
@@ -235,16 +233,18 @@ app.put("/v2/services/update/:id", (req, res) => {
     if (!service) {
       res.status(404).send("404 Not Found");
     } else {
-      Service.update({
-        name: serviceData.name,
-        description: serviceData.description,
-        prices: serviceData.prices,
-        availability: serviceData.availability,
-        category: serviceData.category,
-        contractPeriodInDays: serviceData.contractPeriodInDays,
-        discount: serviceData.discount,
-        discountAmount: serviceData.discountAmount,
-      }).save();
+      service
+        .update({
+          name: serviceData.name,
+          description: serviceData.description,
+          prices: serviceData.prices,
+          availability: serviceData.availability,
+          category: serviceData.category,
+          contractPeriodInDays: serviceData.contractPeriodInDays,
+          discount: serviceData.discount,
+          discountAmount: serviceData.discountAmount,
+        })
+        .save();
     }
   } catch {
     res
