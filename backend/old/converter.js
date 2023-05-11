@@ -18,6 +18,7 @@ const Product = Schema("Products", {
   packagingSize: String,
   packagingWeight: String,
   discontinued: Boolean,
+  modelnumber: String,
 });
 
 const Service = Schema("Services", {
@@ -29,6 +30,7 @@ const Service = Schema("Services", {
   contractPeriodInDays: Number,
   discount: Boolean,
   discountAmount: Number,
+  servicenumber: String,
 });
 
 const products = JSON.parse(fs.readFileSync("./products.json", "utf-8"));
@@ -50,6 +52,7 @@ products.forEach((p) => {
     packagingSize: p.packaginSize,
     packagingWeight: p.packagingWeight,
     discontinue: p.discontinued,
+    modelnumber: p.modelnumber,
   }).save();
 });
 
@@ -63,5 +66,6 @@ services.forEach((s) => {
     contractPeriodInDays: s.contractPeriodInDays,
     discount: s.discount,
     discountAmount: s.discountAmount,
+    servicenumber: s.servicenumber,
   }).save();
 });

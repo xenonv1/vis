@@ -176,18 +176,24 @@ app.put("/v2/services/create", (req, res) => {
   const data = req.body;
 
   try {
-    Service.create({
-      name: data.name,
-      description: data.description,
-      prices: data.prices,
-      availability: data.availability,
-      category: data.category,
-      contractPeriodInDays: data.contractPeriodInDays,
-      discount: data.discount,
-      discountAmount: data.discountAmount,
-    }).save();
+    const service = Service.findOne({ name: data.name });
 
-    res.status(201).send(`Service ${data.name} was successfully created.`);
+    if (!service) {
+      Service.create({
+        name: data.name,
+        description: data.description,
+        prices: data.prices,
+        availability: data.availability,
+        category: data.category,
+        contractPeriodInDays: data.contractPeriodInDays,
+        discount: data.discount,
+        discountAmount: data.discountAmount,
+      }).save();
+
+      res.status(201).send(`Service ${data.name} was successfully created.`);
+    } else {
+      res.status(400).send(`Service ${data.name} already exists.`);
+    }
   } catch {
     res
       .status(500)
