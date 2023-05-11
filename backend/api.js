@@ -12,6 +12,8 @@ app.use(bodyParser.json());
 const ipAddr = "127.0.0.1";
 const port = 8000;
 
+//#region - - - integration of database - - -
+
 const { Schema } = new db({ path: "./databases" });
 
 const Product = Schema("Products", {
@@ -44,21 +46,27 @@ const Service = Schema("Services", {
   servicenumber: String,
 });
 
-/*- - - reading files - - -*/
+//#endregion
+
+//#region - - - reading files - - -
 
 /*
 const products = JSON.parse(fs.readFileSync("./products.json", "utf-8"));
 const services = JSON.parse(fs.readFileSync("./services.json", "utf-8"));
 */
 
-/* - - - server - - - */
+//#endregion
+
+//#region - - - server - - -
 
 app.listen(port, ipAddr, () => {
   console.log(`Now listening on ${ipAddr}:${port}...`);
 });
 
-/* - - - endpoints - - -  v1
+//#endregion
 
+//#region - - - endpoints - - -  v1
+/*
 app.get("/products", (req, res) => {
   res.json(Product.find());
 });
@@ -94,11 +102,13 @@ app.get("/services/:pid", (req, res) => {
     res.end(`service with id ${pid} not found.`);
   }
 });
-
 */
 
-/* - - - v2 - - -*/
+//#endregion
 
+//#region - - - v2 - - -*/
+
+//#region - - - GET endpoints - - -
 app.get("/v2/products", (req, res) => {
   res.json(Product.find());
 });
@@ -130,6 +140,14 @@ app.get("/v2/services/:id", (req, res) => {
     res.json(service);
   }
 });
+
+app.get("*", (req, res) => {
+  res.status(404).end("404 Not Found");
+});
+
+//#endregion
+
+//#region - - - PUT endpoints - - -
 
 app.put("/v2/products/create", (req, res) => {
   const data = req.body;
@@ -272,9 +290,9 @@ app.put("/v2/services/update/:id", (req, res) => {
   }
 });
 
-app.get("*", (req, res) => {
-  res.status(404).end("404 Not Found");
-});
+//#endregion
+
+//#region - - - POST endpoints - - -
 
 app.post("/v2/products/create/post", (req, res) => {
   const data = req.body;
@@ -332,6 +350,10 @@ app.post("/v2/services/create/post", (req, res) => {
   }
 });
 
+//#endregion
+
+//#region - - - DELETE endpoints - - -
+
 app.delete("/v2/products/delete/:id", (req, res) => {
   try {
     const productFound = Product.findOne({ _id: req.params.id });
@@ -375,5 +397,9 @@ app.delete("/v2/services/delete/:id", (req, res) => {
       );
   }
 });
+
+//#endregion
+
+//#endregion
 
 module.exports = app;
