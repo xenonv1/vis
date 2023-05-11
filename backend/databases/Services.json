@@ -1,148 +1,142 @@
 [
   {
-    "name": "Wartungsservice 2024",
-    "description": "Der überarbeitete und viel bessere Wartungsvertrag für das Jahr 2024.",
-    "prices": [{ "validFrom": "01.01.2024", "validTo": null, "price": 149.99 }],
-    "availability": false,
-    "category": "Wartung",
-    "contractPeriodInDays": 0,
-    "discount": false,
-    "discountAmount": 0,
-    "_id": "644a6828f6fda3deca532377"
-  },
-  {
-    "name": "Finanzierungsservice",
-    "description": "Sie möchten Ihr neues Gerät in Raten zahlen? Kein Problem, wir bieten Ihnen attraktive Finanzierungsmöglichkeiten an.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": null }
-    ],
-    "availability": true,
-    "category": "Service",
-    "contractPeriodInDays": 0,
-    "discount": false,
-    "discountAmount": 0,
-    "_id": "64415139bd2e52e80ac4d82c"
-  },
-  {
-    "name": "Wartungsservice",
-    "description": "Unsere Techniker führen regelmäßige Wartungsarbeiten an Ihrem Gerät durch, um die optimale Funktion zu gewährleisten.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": 99.99 }
-    ],
-    "availability": false,
-    "category": "Service",
-    "contractPeriodInDays": 365,
-    "discount": true,
-    "discountAmount": 15,
-    "_id": "64415139bd2e52e80ac4d82b"
-  },
-  {
-    "name": "Einweisungsservice",
-    "description": "Unser geschultes Personal weist Sie in die Funktionen Ihres neuen Geräts ein.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": 19.99 }
-    ],
-    "availability": true,
-    "category": "Service",
-    "contractPeriodInDays": 0,
-    "discount": true,
-    "discountAmount": 100,
-    "_id": "64415139bd2e52e80ac4d82a"
-  },
-  {
-    "name": "Reparaturservice",
-    "description": "Unsere erfahrenen Techniker reparieren Ihr defektes Gerät schnell und zuverlässig.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": 59.99 }
-    ],
-    "availability": true,
-    "category": "Service",
-    "contractPeriodInDays": 0,
-    "discount": false,
-    "discountAmount": 0,
-    "_id": "64415139bd2e52e80ac4d829"
-  },
-  {
-    "name": "Entsorgungsservice",
-    "description": "Wir entsorgen Ihr altes Gerät umweltgerecht und kümmern uns um die fachgerechte Entsorgung.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": 29.99 }
-    ],
-    "availability": true,
-    "category": "Service",
-    "contractPeriodInDays": 0,
-    "discount": true,
-    "discountAmount": 10,
-    "_id": "64415139bd2e52e80ac4d828"
-  },
-  {
-    "name": "Liefer- und Aufbauservice",
-    "description": "Wir liefern Ihr neues Gerät direkt zu Ihnen nach Hause und bauen es fachgerecht für Sie auf.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": 49.99 }
-    ],
-    "availability": false,
-    "category": "Service",
-    "contractPeriodInDays": 0,
-    "discount": true,
-    "discountAmount": 10,
-    "_id": "64415139bd2e52e80ac4d827"
-  },
-  {
-    "name": "Reparaturservice für Haushaltsgeräte",
-    "description": "Unsere erfahrenen Techniker reparieren Ihr defektes Haushaltsgerät schnell und zuverlässig. Wir reparieren unter anderem Waschmaschinen, Trockner, Geschirrspüler, Kühlschränke und Herde.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-12-31", "price": 59.99 }
-    ],
-    "availability": true,
-    "category": "Service",
-    "contractPeriodInDays": 0,
-    "discount": false,
-    "discountAmount": 0,
-    "_id": "64415139bd2e52e80ac4d826"
-  },
-  {
-    "name": "Installationsservice für Küchengeräte",
-    "description": "Fachgerechte Installation von Küchengeräten wie Herd, Backofen, Geschirrspüler usw.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-04-30", "price": 95.99 },
-      { "validFrom": "2023-05-01", "validTo": "2024-04-30", "price": 99.99 },
-      { "validFrom": "2024-05-01", "validTo": "2025-04-30", "price": 109.99 }
-    ],
-    "availability": true,
-    "category": "Installationsservice",
-    "contractPeriodInDays": 0,
-    "discount": true,
-    "discountAmount": 20,
-    "_id": "64415139bd2e52e80ac4d825"
-  },
-  {
-    "name": "Liefer- und Montageservice für Haushaltsgeräte",
-    "description": "Lieferung und fachgerechte Montage von Haushaltsgeräten wie Waschmaschinen, Trocknern, Kühlschränken usw.",
-    "prices": [
-      { "validFrom": "2023-01-01", "validTo": "2023-04-30", "price": 119.99 },
-      { "validFrom": "2023-05-01", "validTo": "2024-04-30", "price": 129.99 },
-      { "validFrom": "2024-05-01", "validTo": "2025-04-30", "price": 139.99 }
-    ],
-    "availability": true,
-    "category": "Montageservice",
-    "contractPeriodInDays": 0,
-    "discount": false,
-    "discountAmount": 0,
-    "_id": "64415139bd2e52e80ac4d824"
-  },
-  {
-    "name": "Wartungsservice für elektronische Geräte",
+    "name": "Wartungsservice Professionelle Wartung für eine lange Lebensdauer Ihrer Haushaltsgeräte",
     "description": "Regelmäßige Wartung von elektronischen Haushaltsgeräten wie Waschmaschinen, Trocknern, Kühlschränken usw.",
     "prices": [
-      { "validFrom": "2023-05-01", "validTo": "2024-04-30", "price": 79.99 },
-      { "validFrom": "2024-05-01", "validTo": "2025-04-30", "price": 89.99 }
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "77.95" }
     ],
-    "availability": true,
+    "availability": false,
     "category": "Wartungsservice",
-    "contractPeriodInDays": 365,
+    "contractPeriodInDays": 149,
     "discount": true,
     "discountAmount": 10,
-    "_id": "64415139bd2e52e80ac4d823"
+    "servicenumber": "54r12sxclhg5ruzf",
+    "_id": "645cd9fce3ca8b1fac72544c"
+  },
+  {
+    "name": "Beratungsservice Fachmännische Beratung für eine optimale Nutzung Ihrer Haushaltsgeräte",
+    "description": "Individuelle Beratung für Ihre Anforderungen und Bedürfnisse",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "129.35" }
+    ],
+    "availability": true,
+    "category": "Beratungsservice",
+    "contractPeriodInDays": 40,
+    "discount": false,
+    "discountAmount": 10,
+    "servicenumber": "54r12sxclhg5ruze",
+    "_id": "645cd9fce3ca8b1fac72544b"
+  },
+  {
+    "name": "Kundendienst Schnelle Hilfe bei Problemen mit Ihren Haushaltsgeräten",
+    "description": "Kompetenter Service für eine optimale Nutzung Ihrer Haushaltsgeräte",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "55.54" }
+    ],
+    "availability": false,
+    "category": "Kundendienst",
+    "contractPeriodInDays": 69,
+    "discount": false,
+    "discountAmount": 10,
+    "servicenumber": "54r12sxclhg5ruzd",
+    "_id": "645cd9fce3ca8b1fac72544a"
+  },
+  {
+    "name": "Beratungsservice Individuelle Beratung für Ihre Anforderungen und Bedürfnisse",
+    "description": "Individuelle Beratung für Ihre Anforderungen und Bedürfnisse",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "353.97" }
+    ],
+    "availability": true,
+    "category": "Beratungsservice",
+    "contractPeriodInDays": 177,
+    "discount": false,
+    "discountAmount": 5,
+    "servicenumber": "54r12sxclhg5ruzc",
+    "_id": "645cd9fce3ca8b1fac725449"
+  },
+  {
+    "name": "Reparaturservice Reparatur von Haushaltsgeräten aller Art",
+    "description": "Reparatur von Haushaltsgeräten aller Art",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "83.94" }
+    ],
+    "availability": false,
+    "category": "Reparaturservice",
+    "contractPeriodInDays": 76,
+    "discount": false,
+    "discountAmount": 5,
+    "servicenumber": "54r12sxclhg5ruzb",
+    "_id": "645cd9fce3ca8b1fac725448"
+  },
+  {
+    "name": "Reparaturservice Reparatur von Haushaltsgeräten aller Art",
+    "description": "Fachmännische Reparatur bei Problemen mit Haushaltsgeräten",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "303.48" }
+    ],
+    "availability": true,
+    "category": "Reparaturservice",
+    "contractPeriodInDays": 228,
+    "discount": true,
+    "discountAmount": 5,
+    "servicenumber": "54r12sxclhg5ruza",
+    "_id": "645cd9fce3ca8b1fac725447"
+  },
+  {
+    "name": "Reparaturservice Schnelle und zuverlässige Reparatur von Haushaltsgeräten",
+    "description": "Fachmännische Reparatur bei Problemen mit Haushaltsgeräten",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "417.85" }
+    ],
+    "availability": true,
+    "category": "Reparaturservice",
+    "contractPeriodInDays": 91,
+    "discount": false,
+    "discountAmount": 10,
+    "servicenumber": "54r12sxclhg5ruz9",
+    "_id": "645cd9fce3ca8b1fac725446"
+  },
+  {
+    "name": "Beratungsservice Fachmännische Beratung für eine optimale Nutzung Ihrer Haushaltsgeräte",
+    "description": "Fachmännische Beratung für eine optimale Nutzung Ihrer Haushaltsgeräte",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "268.75" }
+    ],
+    "availability": true,
+    "category": "Beratungsservice",
+    "contractPeriodInDays": 180,
+    "discount": true,
+    "discountAmount": 20,
+    "servicenumber": "54r12sxclhg5ruz8",
+    "_id": "645cd9fce3ca8b1fac725445"
+  },
+  {
+    "name": "Kundendienst Zuverlässiger Kundenservice bei Fragen und Problemen rund um Ihre Haushaltsgeräte",
+    "description": "Zuverlässiger Kundenservice bei Fragen und Problemen rund um Ihre Haushaltsgeräte",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "422.95" }
+    ],
+    "availability": true,
+    "category": "Kundendienst",
+    "contractPeriodInDays": 82,
+    "discount": true,
+    "discountAmount": 10,
+    "servicenumber": "54r12sxclhg5ruz7",
+    "_id": "645cd9fce3ca8b1fac725444"
+  },
+  {
+    "name": "Installationsservice Professionelle Installation für eine sichere und optimale Nutzung Ihrer Haushaltsgeräte",
+    "description": "Professionelle Installation für eine sichere und optimale Nutzung Ihrer Haushaltsgeräte",
+    "prices": [
+      { "validFrom": "09.05.2022", "validTo": "09.05.2024", "price": "398.50" }
+    ],
+    "availability": false,
+    "category": "Installationsservice",
+    "contractPeriodInDays": 195,
+    "discount": false,
+    "discountAmount": 20,
+    "servicenumber": "54r12sxclhg5ruz6",
+    "_id": "645cd9fce3ca8b1fac725443"
   }
 ]
