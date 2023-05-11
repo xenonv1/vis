@@ -276,7 +276,7 @@ app.get("*", (req, res) => {
   res.status(404).end("404 Not Found");
 });
 
-app.post("/products/create/post", (req, res) => {
+app.post("/v2/products/create/post", (req, res) => {
   const data = req.body;
 
   try {
@@ -307,7 +307,7 @@ app.post("/products/create/post", (req, res) => {
   }
 });
 
-app.post("/services/create/post", (req, res) => {
+app.post("/v2/services/create/post", (req, res) => {
   const data = req.body;
 
   try {
@@ -327,8 +327,53 @@ app.post("/services/create/post", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reacht out to the admin."
+        "An internal error occured. Please try again or reach out to the admin."
       );
   }
 });
+
+app.delete("/v2/products/delete/:id", (req, res) => {
+  try {
+    const productFound = Product.findOne({ _id: req.params.id });
+
+    if (productFound) {
+      productFound.remove();
+
+      res
+        .status(200)
+        .send(`Product ${productFound.name} was deleted successfully`);
+    } else {
+      res.status(404).send("404 Not Found");
+    }
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reach out to the admin"
+      );
+  }
+});
+
+app.delete("/v2/services/delete/:id", (req, res) => {
+  try {
+    const serviceFound = Product.findOne({ _id: req.params.id });
+
+    if (serviceFound) {
+      serviceFound.remove();
+
+      res
+        .status(200)
+        .send(`Service ${serviceFound.name} was deleted successfully`);
+    } else {
+      res.status(404).send("404 Not Found");
+    }
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reach out to the admin"
+      );
+  }
+});
+
 module.exports = app;
