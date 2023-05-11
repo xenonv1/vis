@@ -38,6 +38,8 @@ Content-Type: application/json
         packagingWeight: String,
         discounted: Boolean
 
+Note: Die Modellnummer wird durch das System beim Erstellen eines Produktes generiert, um das Erstellen von Produkten im Rahmen der Veranstaltung zu vereinfachen.
+
 </br>
 
 **PUT .../products/update/:id** - Update eines bestehende Produkts anhand der Id
@@ -87,6 +89,7 @@ Content-Type: application/json
         packagingSize: String,
         packagingWeight: String,
         discounted: Boolean
+
 ### Services:
 
 **GET .../services** - Rückgabe aller Services im JSON-Format</br>
@@ -108,6 +111,8 @@ Content-Type: application/json
         contractPeriodInDays: Number,
         discount: Boolean,
         discountAmount: Number
+
+Note: Die Servicenummer wird durch das System beim Erstellen eines Services generiert, um das Erstellen von Produkten im Rahmen der Veranstaltung zu vereinfachen.
 
 </br>
 
