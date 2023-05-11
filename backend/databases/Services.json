@@ -10,8 +10,8 @@
     "contractPeriodInDays": 149,
     "discount": true,
     "discountAmount": 10,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c9a"
+    "servicenumber": "54r12sxclhg5ruzf",
+    "_id": "645cd9fce3ca8b1fac72544c"
   },
   {
     "name": "Beratungsservice Fachmännische Beratung für eine optimale Nutzung Ihrer Haushaltsgeräte",
@@ -24,8 +24,8 @@
     "contractPeriodInDays": 40,
     "discount": false,
     "discountAmount": 10,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c99"
+    "servicenumber": "54r12sxclhg5ruze",
+    "_id": "645cd9fce3ca8b1fac72544b"
   },
   {
     "name": "Kundendienst Schnelle Hilfe bei Problemen mit Ihren Haushaltsgeräten",
@@ -38,8 +38,8 @@
     "contractPeriodInDays": 69,
     "discount": false,
     "discountAmount": 10,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c98"
+    "servicenumber": "54r12sxclhg5ruzd",
+    "_id": "645cd9fce3ca8b1fac72544a"
   },
   {
     "name": "Beratungsservice Individuelle Beratung für Ihre Anforderungen und Bedürfnisse",
@@ -52,8 +52,8 @@
     "contractPeriodInDays": 177,
     "discount": false,
     "discountAmount": 5,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c97"
+    "servicenumber": "54r12sxclhg5ruzc",
+    "_id": "645cd9fce3ca8b1fac725449"
   },
   {
     "name": "Reparaturservice Reparatur von Haushaltsgeräten aller Art",
@@ -66,8 +66,8 @@
     "contractPeriodInDays": 76,
     "discount": false,
     "discountAmount": 5,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c96"
+    "servicenumber": "54r12sxclhg5ruzb",
+    "_id": "645cd9fce3ca8b1fac725448"
   },
   {
     "name": "Reparaturservice Reparatur von Haushaltsgeräten aller Art",
@@ -80,8 +80,8 @@
     "contractPeriodInDays": 228,
     "discount": true,
     "discountAmount": 5,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c95"
+    "servicenumber": "54r12sxclhg5ruza",
+    "_id": "645cd9fce3ca8b1fac725447"
   },
   {
     "name": "Reparaturservice Schnelle und zuverlässige Reparatur von Haushaltsgeräten",
@@ -94,8 +94,8 @@
     "contractPeriodInDays": 91,
     "discount": false,
     "discountAmount": 10,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c94"
+    "servicenumber": "54r12sxclhg5ruz9",
+    "_id": "645cd9fce3ca8b1fac725446"
   },
   {
     "name": "Beratungsservice Fachmännische Beratung für eine optimale Nutzung Ihrer Haushaltsgeräte",
@@ -108,8 +108,8 @@
     "contractPeriodInDays": 180,
     "discount": true,
     "discountAmount": 20,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c93"
+    "servicenumber": "54r12sxclhg5ruz8",
+    "_id": "645cd9fce3ca8b1fac725445"
   },
   {
     "name": "Kundendienst Zuverlässiger Kundenservice bei Fragen und Problemen rund um Ihre Haushaltsgeräte",
@@ -122,8 +122,8 @@
     "contractPeriodInDays": 82,
     "discount": true,
     "discountAmount": 10,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c92"
+    "servicenumber": "54r12sxclhg5ruz7",
+    "_id": "645cd9fce3ca8b1fac725444"
   },
   {
     "name": "Installationsservice Professionelle Installation für eine sichere und optimale Nutzung Ihrer Haushaltsgeräte",
@@ -136,7 +136,7 @@
     "contractPeriodInDays": 195,
     "discount": false,
     "discountAmount": 20,
-    "servicenumber": "",
-    "_id": "645c9ffb7d433216f16d7c91"
+    "servicenumber": "54r12sxclhg5ruz6",
+    "_id": "645cd9fce3ca8b1fac725443"
   }
 ]

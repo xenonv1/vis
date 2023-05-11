@@ -66,6 +66,6 @@ services.forEach((s) => {
     contractPeriodInDays: s.contractPeriodInDays,
     discount: s.discount,
     discountAmount: s.discountAmount,
-    servicenumber: s.servicenumber,
+    servicenumber: s.serviceNumber,
   }).save();
 });
