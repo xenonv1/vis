@@ -4,12 +4,14 @@ const db = require("db-local");
 const bodyParser = require("body-parser");
 const uniqid = require("uniqid");
 
+const distributor = require("./distributor");
+
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 
-const ipAddr = "127.0.0.1";
+const ipAddr = "192.168.0.100";
 const port = 8000;
 
 //#region - - - integration of database - - -
@@ -141,6 +143,12 @@ app.get("/v2/services/:id", (req, res) => {
   }
 });
 
+app.get("/v2/distributor", async (req, res) => {
+  const response = await distributor(req.headers);
+
+  res.send(response.data);
+});
+
 app.get("*", (req, res) => {
   res.status(404).end("404 Not Found");
 });
@@ -230,7 +238,6 @@ app.put("/v2/products/update/:id", (req, res) => {
     if (!product) {
       res.status(404).send("404 Not Found");
     } else {
-      console.log("if");
       Product.update({
         name: productData.name,
         brand: productData.brand,
@@ -249,7 +256,6 @@ app.put("/v2/products/update/:id", (req, res) => {
       }).save();
     }
   } catch {
-    console.log("else");
     res
       .status(500)
       .send(
