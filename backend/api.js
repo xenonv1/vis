@@ -186,9 +186,11 @@ app.put("/v2/products/create", (req, res) => {
         discontinued: data.discontinued,
         modelnumber: uniqid(),
       }).save();
+      console.log("created product on put endpoint");
       res.status(201).send(`Product ${data.name} was successfully created.`);
     }
   } catch (error) {
+    console.log("could not create product on put endpoint");
     res
       .status(500)
       .send(
