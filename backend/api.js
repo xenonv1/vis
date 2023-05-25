@@ -1,17 +1,20 @@
 const express = require("express");
-const fs = require("fs");
 const cors = require("cors");
 const db = require("db-local");
 const bodyParser = require("body-parser");
 const uniqid = require("uniqid");
+
+const distributor = require("./distributor");
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 
-const ipAddr = "127.0.0.1";
+const ipAddr = "192.168.0.100";
 const port = 8000;
+
+//#region - - - integration of database - - -
 
 const { Schema } = new db({ path: "./databases" });
 
@@ -45,21 +48,27 @@ const Service = Schema("Services", {
   servicenumber: String,
 });
 
-/*- - - reading files - - -*/
+//#endregion
+
+//#region - - - reading files - - -
 
 /*
 const products = JSON.parse(fs.readFileSync("./products.json", "utf-8"));
 const services = JSON.parse(fs.readFileSync("./services.json", "utf-8"));
 */
 
-/* - - - server - - - */
+//#endregion
+
+//#region - - - server - - -
 
 app.listen(port, ipAddr, () => {
   console.log(`Now listening on ${ipAddr}:${port}...`);
 });
 
-/* - - - endpoints - - -  v1
+//#endregion
 
+//#region - - - endpoints - - -  v1
+/*
 app.get("/products", (req, res) => {
   res.json(Product.find());
 });
@@ -95,11 +104,13 @@ app.get("/services/:pid", (req, res) => {
     res.end(`service with id ${pid} not found.`);
   }
 });
-
 */
 
-/* - - - v2 - - -*/
+//#endregion
 
+//#region - - - v2 - - -*/
+
+//#region - - - GET endpoints - - -
 app.get("/v2/products", (req, res) => {
   res.json(Product.find());
 });
@@ -132,6 +143,20 @@ app.get("/v2/services/:id", (req, res) => {
   }
 });
 
+app.get("/v2/distributor", async (req, res) => {
+  const response = await distributor(req.headers);
+
+  res.send(response.data);
+});
+
+app.get("*", (req, res) => {
+  res.status(404).end("404 Not Found");
+});
+
+//#endregion
+
+//#region - - - PUT endpoints - - -
+
 app.put("/v2/products/create", (req, res) => {
   const data = req.body;
   //const lowercaseName = data.name.toLowerCase();
@@ -161,9 +186,11 @@ app.put("/v2/products/create", (req, res) => {
         discontinued: data.discontinued,
         modelnumber: uniqid(),
       }).save();
+      console.log("created product on put endpoint");
       res.status(201).send(`Product ${data.name} was successfully created.`);
     }
   } catch (error) {
+    console.log("could not create product on put endpoint");
     res
       .status(500)
       .send(
@@ -213,7 +240,6 @@ app.put("/v2/products/update/:id", (req, res) => {
     if (!product) {
       res.status(404).send("404 Not Found");
     } else {
-      console.log("if");
       Product.update({
         name: productData.name,
         brand: productData.brand,
@@ -232,7 +258,6 @@ app.put("/v2/products/update/:id", (req, res) => {
       }).save();
     }
   } catch {
-    console.log("else");
     res
       .status(500)
       .send(
@@ -273,11 +298,11 @@ app.put("/v2/services/update/:id", (req, res) => {
   }
 });
 
-app.get("*", (req, res) => {
-  res.status(404).end("404 Not Found");
-});
+//#endregion
 
-app.post("/products/create/post", (req, res) => {
+//#region - - - POST endpoints - - -
+
+app.post("/v2/products/create/post", (req, res) => {
   const data = req.body;
 
   try {
@@ -308,7 +333,7 @@ app.post("/products/create/post", (req, res) => {
   }
 });
 
-app.post("/services/create/post", (req, res) => {
+app.post("/v2/services/create/post", (req, res) => {
   const data = req.body;
 
   try {
@@ -328,8 +353,61 @@ app.post("/services/create/post", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reacht out to the admin."
+        "An internal error occured. Please try again or reach out to the admin."
       );
   }
 });
+
+//#endregion
+
+//#region - - - DELETE endpoints - - -
+
+app.delete("/v2/products/delete/:id", (req, res) => {
+  try {
+    const productFound = Product.findOne({ _id: req.params.id });
+
+    if (productFound) {
+      productFound.remove();
+
+      res
+        .status(200)
+        .send(`Product ${productFound.name} was deleted successfully`);
+    } else {
+      res.status(404).send("404 Not Found");
+    }
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reach out to the admin"
+      );
+  }
+});
+
+app.delete("/v2/services/delete/:id", (req, res) => {
+  try {
+    const serviceFound = Product.findOne({ _id: req.params.id });
+
+    if (serviceFound) {
+      serviceFound.remove();
+
+      res
+        .status(200)
+        .send(`Service ${serviceFound.name} was deleted successfully`);
+    } else {
+      res.status(404).send("404 Not Found");
+    }
+  } catch {
+    res
+      .status(500)
+      .send(
+        "An internal error occured. Please try again or reach out to the admin"
+      );
+  }
+});
+
+//#endregion
+
+//#endregion
+
 module.exports = app;
