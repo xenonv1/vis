@@ -10,7 +10,10 @@
           <tr>
             <td>
               <div class="data-container">
-                <pre id="productsSourceCode">{{ productsSourceCode }}</pre>
+                <pre v-if="productsSourceCode" id="productsSourceCode">{{
+                  productsSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -22,7 +25,10 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="servicesSourceCode">{{ servicesSourceCode }}</pre>
+                <pre v-if="servicesSourceCode" id="servicesSourceCode">{{
+                  servicesSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -34,7 +40,8 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="skillsSourceCode">{{ skillsSourceCode }}</pre>
+                <pre v-if="skillsSourceCode" id="skillsSourceCode">{{ skillsSourceCode }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -46,7 +53,10 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="incidentsSourceCode">{{ incidentsSourceCode }}</pre>
+                <pre v-if="incidentsSourceCode" id="incidentsSourceCode">{{
+                  incidentsSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -58,7 +68,10 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="planningSourceCode">{{ planningSourceCode }}</pre>
+                <pre v-if="planningSourceCode" id="planningSourceCode">{{
+                  planningSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -70,7 +83,10 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="techniciansSourceCode">{{ techniciansSourceCode }}</pre>
+                <pre v-if="techniciansSourceCode" id="techniciansSourceCode">{{
+                  techniciansSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -82,7 +98,8 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="ordersSourceCode">{{ ordersSourceCode }}</pre>
+                <pre v-if="ordersSourceCode" id="ordersSourceCode">{{ ordersSourceCode }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -94,7 +111,8 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="cartsSourceCode">{{ cartsSourceCode }}</pre>
+                <pre v-if="cartsSourceCode" id="cartsSourceCode">{{ cartsSourceCode }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -106,7 +124,10 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="customersSourceCode">{{ customersSourceCode }}</pre>
+                <pre v-if="customersSourceCode" id="customersSourceCode">{{
+                  customersSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -118,7 +139,10 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="adressesSourceCode">{{ adressesSourceCode }}</pre>
+                <pre v-if="adressesSourceCode" id="adressesSourceCode">{{
+                  adressesSourceCode
+                }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -130,7 +154,8 @@
           <tr>
             <td>
               <div class="data-container">
-              <pre id="usersSourceCode">{{ usersSourceCode }}</pre>
+                <pre v-if="usersSourceCode" id="usersSourceCode">{{ usersSourceCode }}</pre>
+                <Spinner v-else />
               </div>
             </td>
           </tr>
@@ -140,10 +165,14 @@
   </div>
 </template>
 <script>
-
 import axios from 'axios'
 
+import Spinner from './components/Spinner.vue'
+
 export default {
+  components: {
+    Spinner
+  },
   data() {
     return {
       isActive: false,
@@ -151,13 +180,13 @@ export default {
       servicesSourceCode: '',
       skillsSourceCode: '',
       incidentsSourceCode: '',
-      planningSourceCode:'',
-      techniciansSourceCode:'',
-      ordersSourceCode:'',
-      cartsSourceCode:'',
-      customersSourceCode:'',
-      adressesSourceCode:'',
-      usersSourceCode:''
+      planningSourceCode: '',
+      techniciansSourceCode: '',
+      ordersSourceCode: '',
+      cartsSourceCode: '',
+      customersSourceCode: '',
+      adressesSourceCode: '',
+      usersSourceCode: ''
     }
   },
   created() {
@@ -180,11 +209,11 @@ export default {
       }
     }
   },
-  
+
   methods: {
     async fetchProductsSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'neverovertime',
           'team-endpoint': 'products'
         }
@@ -199,7 +228,7 @@ export default {
     },
     async fetchServicesSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'neverovertime',
           'team-endpoint': 'services'
         }
@@ -214,7 +243,7 @@ export default {
     },
     async fetchSkillsSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': '404',
           'team-endpoint': 'skills'
         }
@@ -229,7 +258,7 @@ export default {
     },
     async fetchIncidentsSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': '404',
           'team-endpoint': 'incidents'
         }
@@ -244,7 +273,7 @@ export default {
     },
     async fetchPlanningSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': '404',
           'team-endpoint': 'planning'
         }
@@ -259,7 +288,7 @@ export default {
     },
     async fetchTechniciansSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': '404',
           'team-endpoint': 'technicians'
         }
@@ -274,7 +303,7 @@ export default {
     },
     async fetchOrdersSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'pizza',
           'team-endpoint': 'orders'
         }
@@ -289,7 +318,7 @@ export default {
     },
     async fetchCartsSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'pizza',
           'team-endpoint': 'carts'
         }
@@ -304,7 +333,7 @@ export default {
     },
     async fetchCustomersSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'colada',
           'team-endpoint': 'customers'
         }
@@ -319,7 +348,7 @@ export default {
     },
     async fetchAdressesSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'colada',
           'team-endpoint': 'adresses'
         }
@@ -334,7 +363,7 @@ export default {
     },
     async fetchUsersSourceCode() {
       const config = {
-        headers:{
+        headers: {
           'team-name': 'colada',
           'team-endpoint': 'users'
         }
