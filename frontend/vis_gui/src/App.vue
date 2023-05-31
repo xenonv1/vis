@@ -209,7 +209,6 @@ export default {
       }
     }
   },
-
   methods: {
     async fetchProductsSourceCode() {
       const config = {
@@ -381,7 +380,7 @@ export default {
       this.fetchServicesSourceCode()
       this.fetchSkillsSourceCode()
       this.fetchIncidentsSourceCode()
-      this.fetchplanningSourceCode()
+      this.fetchPlanningSourceCode()
       this.fetchTechniciansSourceCode()
       this.fetchOrdersSourceCode()
       this.fetchCartsSourceCode()
