@@ -175,6 +175,7 @@ export default {
   },
   data() {
     return {
+      url: 'http://192.168.0.100:8000/v2/distributor',
       isActive: false,
       productsSourceCode: '',
       servicesSourceCode: '',
@@ -218,7 +219,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.productsSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -233,7 +234,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.servicesSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -248,7 +249,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.skillsSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -263,7 +264,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.incidentsSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -278,7 +279,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.planningSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -293,7 +294,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.techniciansSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -308,7 +309,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.ordersSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -323,7 +324,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.cartsSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -338,7 +339,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.customersSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -353,7 +354,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.adressesSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
@@ -368,7 +369,7 @@ export default {
         }
       }
       try {
-        const response = await axios.get('http://192.168.0.100:8000/v2/distributor', config)
+        const response = await axios.get(this.url, config)
         this.usersSourceCode = JSON.stringify(response.data, null, 2)
         console.log(response.data)
       } catch (error) {
