@@ -6,6 +6,7 @@
     "db-local": "^2.9.1",
     "express": "^4.18.2",
     "luxon": "^3.3.0",
+    "prettier": "^2.8.8",
     "random-js": "^2.1.0",
     "uniqid": "^5.4.0"
   },
@@ -14,6 +15,7 @@
     "supertest": "^6.3.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "serve": "vue-cli-service serve"
   }
 }
