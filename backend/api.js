@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const ipAddr = "192.168.0.100";
+const ipAddr = "127.0.0.1";
 const port = 8000;
 
 //#region - - - integration of database - - -

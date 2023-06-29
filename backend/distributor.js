@@ -102,7 +102,7 @@ async function getServiceById(id) {
 
 //#region - - - requests team 404 - - -
 
-const ip404 = "192.168.0.101";
+const ip404 = "192.168.0.107";
 const port404 = "404";
 
 const baseUrl404 = `http://${ip404}:${port404}`;
@@ -158,9 +158,9 @@ function postIncidentData() {
   const data = {
     name: "Etwas ist gabutt gegangen",
     product: "Mikrowelle",
-    customer: 3,
+    customer: 1,
     description: "Löffel war noch in Schüssel",
-    skills: [2],
+    skills: ["646f58ec7a1bc2b6f0b350ec"],
     priority: "low",
     serviceEmployee: 1,
   };
@@ -206,7 +206,7 @@ async function getShoppingCarts() {
 //#endregion
 
 //#region - - - requests team colada - - -
-const ipColada = "192.168.0.103";
+const ipColada = "192.168.0.101";
 const portColada = "8000";
 
 const baseUrlColada = `http://${ipColada}:${portColada}`;

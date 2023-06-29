@@ -350,7 +350,7 @@ export default {
       const config = {
         headers: {
           'team-name': 'colada',
-          'team-endpoint': 'adresses'
+          'team-endpoint': 'addresses'
         }
       }
       try {
@@ -377,6 +377,17 @@ export default {
       }
     },
     handleClick() {
+      this.productsSourceCode = null
+      this.servicesSourceCode = null
+      this.skillsSourceCode = null
+      this.incidentsSourceCode = null
+      this.planningSourceCode = null
+      this.techniciansSourceCode = null
+      this.ordersSourceCode = null
+      this.cartsSourceCode = null
+      this.customersSourceCode = null
+      this.adressesSourceCode = null
+      this.usersSourceCode = null
       this.fetchProductsSourceCode()
       this.fetchServicesSourceCode()
       this.fetchSkillsSourceCode()
@@ -397,8 +408,8 @@ export default {
 html,
 body {
   height: 100%;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #414143;
 }
 
 .button-container {
@@ -407,6 +418,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+button {
+  width: 95vw;
 }
 
 .table-container {
@@ -424,7 +439,7 @@ table {
   float: left;
   width: 33%;
   max-height: 50vh;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 #productsSourceCode,
