@@ -1,5 +1,7 @@
 const axios = require("axios");
 
+const circuitBreaker = require("./circuit-breaker");
+
 function distributeRequest(headers) {
   const teamName = headers["team-name"];
   const teamEndpoint = headers["team-endpoint"];
@@ -53,12 +55,15 @@ function distributeRequest(headers) {
         }
       }
       break;
+    case "test": {
+      circuitBreaker.performRequest(getSampleData);
+    }
   }
   return "oops, something went wrong :(";
 }
 
 //#region - - - requests team never overtime. - - -
-const ipNeverOvertime = "192.168.0.100";
+const ipNeverOvertime = "127.0.0.1";
 const portNeverOvertime = "8000";
 
 const baseUrlNO = `http://${ipNeverOvertime}:${portNeverOvertime}`;
@@ -260,5 +265,10 @@ async function getRoles() {
 }
 
 //#endregion
+
+function getSampleData() {
+  circuitBreaker.logBreakerStats();
+  return axios.get("http://127.0.0.1:8080/cb-test");
+}
 
 module.exports = distributeRequest;
