@@ -58,7 +58,7 @@ function distributeRequest(headers) {
 }
 
 //#region - - - requests team never overtime. - - -
-const ipNeverOvertime = "192.168.0.100";
+const ipNeverOvertime = "127.0.0.1";
 const portNeverOvertime = "8000";
 
 const baseUrlNO = `http://${ipNeverOvertime}:${portNeverOvertime}`;

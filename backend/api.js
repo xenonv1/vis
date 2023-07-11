@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const ipAddr = "192.168.0.100";
+const ipAddr = "127.0.0.1";
 const port = 8000;
 
 //#region - - - integration of database - - -
@@ -194,7 +194,7 @@ app.put("/v2/products/create", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occurred. Please try again or reach out to the admin."
+        "An internal error occurred. Please try again or reach out to the admin.",
       );
   }
 });
@@ -225,7 +225,7 @@ app.put("/v2/services/create", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reacht out to the admin."
+        "An internal error occured. Please try again or reacht out to the admin.",
       );
   }
 });
@@ -261,7 +261,7 @@ app.put("/v2/products/update/:id", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reacht out to the admin."
+        "An internal error occured. Please try again or reacht out to the admin.",
       );
   }
 });
@@ -293,7 +293,7 @@ app.put("/v2/services/update/:id", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reacht out to the admin."
+        "An internal error occured. Please try again or reacht out to the admin.",
       );
   }
 });
@@ -328,7 +328,7 @@ app.post("/v2/products/create/post", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reach out to the admin."
+        "An internal error occured. Please try again or reach out to the admin.",
       );
   }
 });
@@ -353,7 +353,7 @@ app.post("/v2/services/create/post", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reach out to the admin."
+        "An internal error occured. Please try again or reach out to the admin.",
       );
   }
 });
@@ -379,7 +379,7 @@ app.delete("/v2/products/delete/:id", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reach out to the admin"
+        "An internal error occured. Please try again or reach out to the admin",
       );
   }
 });
@@ -401,7 +401,7 @@ app.delete("/v2/services/delete/:id", (req, res) => {
     res
       .status(500)
       .send(
-        "An internal error occured. Please try again or reach out to the admin"
+        "An internal error occured. Please try again or reach out to the admin",
       );
   }
 });
