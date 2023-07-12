@@ -82,15 +82,12 @@ function performRequest(inputFunction, params = null) {
   // this will lead to only partial execution of the recovery requests
   if (requests.length > minRequests && cbStatus === "closed") {
     // check if consecutiveFailureRate is too high
-    if (
-      consecutiveFailures >= maxConsecutiveFailures &&
-      requests.length > minRequests
-    ) {
+    if (consecutiveFailures >= maxConsecutiveFailures) {
       cbStatus = "open";
     }
 
     // check if failureRate is too high
-    if (failureRate >= maxFailureRate && requests.length > minRequests) {
+    if (failureRate >= maxFailureRate) {
       cbStatus = "open";
     }
   }
@@ -111,7 +108,6 @@ async function startTimeout() {
 }
 
 function endTimeout() {
-  consecutiveFailures = 0;
   recoveryRequests = 0;
   cbStatus = "half-open";
 }
