@@ -26,7 +26,7 @@ scenarios:
       - get:
           url: "/v2/products"
       - post:
-          url: "v2/products/create/post"
+          url: "/v2/products/create/post"
           json:
             name: "Artillery insert"
             brand: ""
