@@ -9,6 +9,7 @@ let consecutiveFailures = 0;
 let recoveryRequests = 0;
 let failureRate = 0;
 let cbStatus = "closed";
+let response;
 
 /* todo: 
     - failure rate muss resettet werden um nicht beim ersten recovery request sofort wieder in den timeout zu laufen
@@ -32,7 +33,6 @@ function setParameters({
 }
 
 function performRequest(inputFunction, params = null) {
-  let response;
   // check if requests are allowed || allow x request to warm up the circuit breaker
   if (cbStatus === "closed" || requests.length < minRequests) {
     inputFunction(params)
@@ -53,7 +53,6 @@ function performRequest(inputFunction, params = null) {
     // check if there are recovery requests left
     if (recoveryRequests < maxRecoveryRequests) {
       // try making a request to recover from half-open state
-      let response;
       inputFunction(params)
         .then((data) => {
           response = data;
@@ -92,6 +91,8 @@ function performRequest(inputFunction, params = null) {
 
   // if circuit breaker status is open => start
   if (cbStatus === "open") startTimeout();
+
+  return response;
 }
 
 function checkWindowLength() {

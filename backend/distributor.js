@@ -56,7 +56,7 @@ function distributeRequest(headers) {
       }
       break;
     case "test": {
-      circuitBreaker.performRequest(getSampleData);
+      return circuitBreaker.performRequest(getSampleData);
     }
   }
   return "oops, something went wrong :(";
@@ -266,9 +266,9 @@ async function getRoles() {
 
 //#endregion
 
-function getSampleData() {
+async function getSampleData() {
   circuitBreaker.logBreakerStats();
-  return axios.get("http://127.0.0.1:8080/cb-test");
+  return await axios.get("http://127.0.0.1:8080/cb-test");
 }
 
 module.exports = distributeRequest;

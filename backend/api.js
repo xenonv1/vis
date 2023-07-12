@@ -146,7 +146,7 @@ app.get("/v2/services/:id", (req, res) => {
 app.get("/v2/distributor", async (req, res) => {
   const response = await distributor(req.headers);
 
-  res.send(response.data);
+  res.send(response?.data);
 });
 
 app.get("*", (req, res) => {
