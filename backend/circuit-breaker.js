@@ -11,11 +11,6 @@ let failureRate = 0;
 let cbStatus = "closed";
 let response;
 
-/* todo: 
-    - failure rate muss resettet werden um nicht beim ersten recovery request sofort wieder in den timeout zu laufen
-    - requests darf nicht geleert werden, da sonst mindestens 10 requests durchlaufen um von half-open auf closed bzw open zu welchseln
-*/
-
 function setParameters({
   maxConsecutiveFailures,
   maxFailureRate,
@@ -58,7 +53,9 @@ function performRequest(inputFunction, params = null) {
           response = data;
           consecutiveFailures = 0;
           recoveryRequests = 0;
+          requests = [];
           requests.push(1);
+          cbStatus = "closed";
           checkWindowLength();
         })
         .catch((error) => {
@@ -76,18 +73,27 @@ function performRequest(inputFunction, params = null) {
     return;
   }
 
-  // check if consecutiveFailureRate is too high
-  if (
-    consecutiveFailures >= maxConsecutiveFailures &&
-    requests.length > minRequests
-  )
-    cbStatus = "open";
-
-  // calculate failure rate and check if failureRate is too high
+  // calculate failure rate
   failureRate =
     (requests.filter((item) => item === 0).length / requests.length) * 100;
-  if (failureRate >= maxFailureRate && requests.length > minRequests)
-    cbStatus = "open";
+
+  // this block only needs to be executed if the circuit breaker is in closed state because we want to perform all recovery requests
+  // if this execution would also take place in half-open state the circuit breaker would instantly trip to open again, because the failure rate would be too high
+  // this will lead to only partial execution of the recovery requests
+  if (requests.length > minRequests && cbStatus === "closed") {
+    // check if consecutiveFailureRate is too high
+    if (
+      consecutiveFailures >= maxConsecutiveFailures &&
+      requests.length > minRequests
+    ) {
+      cbStatus = "open";
+    }
+
+    // check if failureRate is too high
+    if (failureRate >= maxFailureRate && requests.length > minRequests) {
+      cbStatus = "open";
+    }
+  }
 
   // if circuit breaker status is open => start
   if (cbStatus === "open") startTimeout();
@@ -107,7 +113,6 @@ async function startTimeout() {
 function endTimeout() {
   consecutiveFailures = 0;
   recoveryRequests = 0;
-  failureRate = 0;
   cbStatus = "half-open";
 }
 
